@@ -1,5 +1,14 @@
-@import "@fontsource/lato";
+/* Write your global styles here, in PostCSS syntax */
+
+@import "@fontsource/lato/300.css";
+
+@tailwind base;
 
 * {
   font-family: "Lato", sans-serif;
+  background-color: rgb(248 250 252);
 }
+
+@tailwind components;
+
+@tailwind utilities;

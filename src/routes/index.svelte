@@ -29,7 +29,7 @@
   <title>Home</title>
 </svelte:head>
 
-<h1>Expense Tracker</h1>
+<h1 class="py-3 font-bold text-3xl">Expense Tracker</h1>
 <Balance {transactions} />
 
 <!-- <IncomeExpenseSummary /> -->
@@ -38,5 +38,3 @@
 <TransactionsList />
 <h2>Add Transaction:</h2>
 <AddTransaction /> -->
-<style>
-</style>

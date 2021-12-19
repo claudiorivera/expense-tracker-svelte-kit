@@ -2,9 +2,6 @@
   import "../app.css";
 </script>
 
-<main>
+<main class="max-w-sm mx-auto py-10 font-thin antialiased">
   <slot />
 </main>
-
-<style>
-</style>
