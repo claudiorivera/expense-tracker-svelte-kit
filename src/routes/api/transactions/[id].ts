@@ -14,3 +14,15 @@ export const get = async (req: Request): Promise<{ body: Transaction }> => {
     body: transaction,
   };
 };
+
+export const del = async (req: Request): Promise<{ body: Transaction }> => {
+  await mongooseConnect();
+
+  const transaction = await TransactionModel.findOneAndDelete({
+    _id: req.params.id,
+  });
+
+  return {
+    body: transaction,
+  };
+};
