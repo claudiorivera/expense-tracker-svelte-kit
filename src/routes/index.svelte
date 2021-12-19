@@ -20,7 +20,11 @@
 </script>
 
 <script lang="ts">
+  import AddTransaction from "$lib/components/AddTransaction.svelte";
+
+  import Heading from "$lib/components/Heading.svelte";
   import IncomeExpenseSummary from "$lib/components/IncomeExpenseSummary.svelte";
+  import TransactionsList from "$lib/components/TransactionsList.svelte";
   import type { Transaction } from "$lib/types";
   export let transactions: Transaction[];
 
@@ -35,15 +39,14 @@
 
 <h1 class="py-3 font-bold text-3xl">Expense Tracker</h1>
 
-<h2 class="text-xl py-2 font-bold">
-  Balance: <span class={balance < 0 ? "text-red-500" : "text-green-500"}
-    >${balance}</span
+<Heading title="Balance">
+  <span class={balance < 0 ? "text-red-500" : "text-green-500"}>${balance}</span
   >
-</h2>
-
+</Heading>
 <IncomeExpenseSummary {transactions} />
 
-<h2 class="text-xl py-2 font-bold">Transactions:</h2>
-<!-- <TransactionsList /> -->
-<h2 class="text-xl py-2 font-bold">Add Transaction:</h2>
-<!-- <AddTransaction /> -->
+<Heading title="Transactions" />
+<TransactionsList {transactions} />
+
+<Heading title="Add Transaction" />
+<AddTransaction />
