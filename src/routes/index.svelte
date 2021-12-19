@@ -20,21 +20,30 @@
 </script>
 
 <script lang="ts">
-  import Balance from "$lib/components/Balance.svelte";
+  import IncomeExpenseSummary from "$lib/components/IncomeExpenseSummary.svelte";
   import type { Transaction } from "$lib/types";
   export let transactions: Transaction[];
+
+  $: balance = transactions.reduce((acc, curr) => {
+    return (acc += curr.amount);
+  }, 0);
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Expense Tracker</title>
 </svelte:head>
 
 <h1 class="py-3 font-bold text-3xl">Expense Tracker</h1>
-<Balance {transactions} />
 
-<!-- <IncomeExpenseSummary /> -->
+<h2 class="text-xl py-2 font-bold">
+  Balance: <span class={balance < 0 ? "text-red-500" : "text-green-500"}
+    >${balance}</span
+  >
+</h2>
 
-<!-- <h2>Transactions:</h2>
-<TransactionsList />
-<h2>Add Transaction:</h2>
-<AddTransaction /> -->
+<IncomeExpenseSummary {transactions} />
+
+<h2 class="text-xl py-2 font-bold">Transactions:</h2>
+<!-- <TransactionsList /> -->
+<h2 class="text-xl py-2 font-bold">Add Transaction:</h2>
+<!-- <AddTransaction /> -->
