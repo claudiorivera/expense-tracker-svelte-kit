@@ -14,14 +14,17 @@
 
 <ul>
   {#each transactions as transaction}
-    <button
-      type="button"
-      on:click={() => {
-        handleDelete(transaction._id);
-      }}
-    >
-      🗑️</button
-    >
-    <li>{transaction.description} {transaction.amount}</li>
+    <li>
+      <button
+        type="button"
+        on:click={() => {
+          handleDelete(transaction._id);
+        }}
+      >
+        🗑️</button
+      >
+      {transaction.description}
+      {transaction.amount}
+    </li>
   {/each}
 </ul>
