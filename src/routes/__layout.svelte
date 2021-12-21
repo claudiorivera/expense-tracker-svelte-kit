@@ -2,6 +2,6 @@
   import "../app.css";
 </script>
 
-<main class="max-w-lg mx-auto py-10 font-thin antialiased">
+<main class="font-thin antialiased bg-slate-50 h-screen">
   <slot />
 </main>
