@@ -1,6 +1,4 @@
 <script lang="ts">
-  import type { Transaction } from "$lib/types";
-
   export let fetchTransactions: () => Promise<void>;
 
   let description: string;

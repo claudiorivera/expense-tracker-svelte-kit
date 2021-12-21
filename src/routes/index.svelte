@@ -53,7 +53,7 @@
   <IncomeExpenseSummary {transactions} />
 
   <Heading title="Transactions" />
-  <TransactionsList {transactions} />
+  <TransactionsList {transactions} {fetchTransactions} />
 
   <Heading title="Add Transaction" />
   <AddTransaction {fetchTransactions} />
