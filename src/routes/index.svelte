@@ -1,5 +1,4 @@
 <script context="module" lang="ts">
-  export const prerender = true;
   export const load = async ({ fetch }) => {
     const url = "/api/transactions";
     const res = await fetch(url);
