@@ -4,5 +4,5 @@
 
 <h2 class="text-xl py-2 font-bold">
   {title}:
-  <slot />
+  <slot name="inline-content" />
 </h2>

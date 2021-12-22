@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
   export const prerender = true;
   export const load = async ({ fetch }) => {
-    const url = `/api/transactions`;
+    const url = "/api/transactions";
     const res = await fetch(url);
 
     if (res.ok) {
@@ -46,8 +46,9 @@
   <h1 class="py-3 font-bold text-3xl">Expense Tracker</h1>
 
   <Heading title="Balance">
-    <span class={balance < 0 ? "text-red-500" : "text-green-500"}
-      >${balance}</span
+    <span
+      slot="inline-content"
+      class={balance < 0 ? "text-red-500" : "text-green-500"}>${balance}</span
     >
   </Heading>
   <IncomeExpenseSummary {transactions} />
