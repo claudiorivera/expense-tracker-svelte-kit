@@ -23,6 +23,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import IncomeExpenseSummary from "$lib/components/IncomeExpenseSummary.svelte";
   import TransactionsList from "$lib/components/TransactionsList.svelte";
+  import { formatDollarAmount } from "$lib/formatDollarAmount";
   import type { Transaction } from "$lib/types";
 
   export let transactions: Transaction[];
@@ -47,7 +48,8 @@
   <Heading title="Balance">
     <span
       slot="inline-content"
-      class={balance < 0 ? "text-red-500" : "text-green-500"}>${balance}</span
+      class={balance < 0 ? "text-red-500" : "text-green-500"}
+      >${formatDollarAmount(balance)}</span
     >
   </Heading>
   <IncomeExpenseSummary {transactions} />
