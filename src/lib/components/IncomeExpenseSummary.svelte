@@ -20,11 +20,11 @@
   <div class="flex justify-between">
     <div class="flex-grow border-r text-center">
       <div>INCOME</div>
-      <div class="text-green-500">${totalIncome}</div>
+      <div class="text-green-500">${totalIncome.toFixed(2)}</div>
     </div>
     <div class="flex-grow text-center">
       <div>EXPENSES</div>
-      <div class="text-red-500">-${totalExpenses}</div>
+      <div class="text-red-500">-${totalExpenses.toFixed(2)}</div>
     </div>
   </div>
 </div>

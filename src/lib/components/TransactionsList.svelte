@@ -1,5 +1,8 @@
 <script lang="ts">
+  import { formatDollarAmount } from "$lib/formatDollarAmount";
+
   import type { Transaction } from "$lib/types";
+  import DeleteIcon from "./DeleteIcon.svelte";
 
   export let transactions: Transaction[];
   export let fetchTransactions: () => Promise<void>;
@@ -12,19 +15,22 @@
   };
 </script>
 
-<ul>
+<ul class="shadow rounded m-1 p-1 bg-white">
   {#each transactions as transaction}
-    <li>
-      <button
-        type="button"
-        on:click={() => {
-          handleDelete(transaction._id);
-        }}
-      >
-        🗑️</button
-      >
-      {transaction.description}
-      {transaction.amount}
+    <li class="p-3 hover:font-bold border-b last:border-none">
+      <div class="flex items-center">
+        <button
+          class="mr-1"
+          type="button"
+          on:click={() => {
+            handleDelete(transaction._id);
+          }}
+        >
+          <DeleteIcon />
+        </button>
+        <div class="flex-grow">{transaction.description}</div>
+        <div>{formatDollarAmount(transaction.amount)}</div>
+      </div>
     </li>
   {/each}
 </ul>

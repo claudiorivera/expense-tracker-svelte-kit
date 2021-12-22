@@ -23,6 +23,6 @@
   class="shadow rounded m-1 p-1 bg-white"
 >
   <input type="text" name="description" bind:value={description} />
-  <input type="number" name="amount" bind:value={amount} />
+  <input type="number" step="0.01" name="amount" bind:value={amount} />
   <button type="submit">Submit</button>
 </form>

@@ -2,6 +2,6 @@
   import "../app.css";
 </script>
 
-<main class="font-thin antialiased bg-slate-50 h-screen">
+<main class="font-thin cursor-default antialiased bg-slate-50">
   <slot />
 </main>
