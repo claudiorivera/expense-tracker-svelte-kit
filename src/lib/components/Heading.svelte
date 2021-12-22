@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let title: string = "";
+  export let title = "";
 </script>
 
 <h2 class="text-xl py-2 font-bold">

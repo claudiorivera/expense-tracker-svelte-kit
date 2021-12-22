@@ -1,4 +1,6 @@
 /// <reference types="@sveltejs/kit" />
-interface ImportMetaEnv {
-  MONGODB_URI: string;
+declare namespace NodeJS {
+  export interface ProcessEnv {
+    MONGODB_URI: string;
+  }
 }
