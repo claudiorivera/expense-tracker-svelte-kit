@@ -42,7 +42,7 @@
   <title>Expense Tracker</title>
 </svelte:head>
 
-<div class="max-w-md mx-auto py-10">
+<div class="max-w-xs mx-auto py-10">
   <h1 class="py-3 font-bold text-3xl">Expense Tracker</h1>
 
   <Heading title="Balance">

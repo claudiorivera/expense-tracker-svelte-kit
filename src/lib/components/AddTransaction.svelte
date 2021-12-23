@@ -60,7 +60,7 @@
           >
         </div>
       </div>
-      <div>
+      <div class="flex items-center gap-1">
         <label for="description" class="mr-2">Description</label>
         <input
           class="form-input rounded my-2"
@@ -71,7 +71,7 @@
           bind:this={inputRef}
         />
       </div>
-      <div>
+      <div class="flex items-center gap-1">
         <label for="amount" class="mr-2">Amount</label>
         <input
           inputmode="decimal"
