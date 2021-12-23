@@ -28,44 +28,53 @@
 >
   <div class="flex flex-wrap justify-start m-3">
     <div class="flex-grow flex flex-col items-end">
-      <div class="flex gap-3">
-        <label
-          >Expense<input
+      <div class="flex gap-5">
+        <div class="flex items-center gap-1">
+          <input
+            name="transactionType-expense"
             type="radio"
+            class="form-radio"
             bind:group={transactionType}
             value="expense"
             checked
-          /></label
-        >
-        <label
-          >Income<input
+          />
+          <label for="transactionType-expense">Expense</label>
+        </div>
+        <div class="flex items-center gap-1">
+          <input
+            name="transactionType-income"
             type="radio"
             bind:group={transactionType}
             value="income"
-          /></label
-        >
+          />
+          <label for="transactionType-income">Income</label>
+        </div>
       </div>
-      <label
-        >Description<input
+      <div>
+        <label for="description" class="mr-2">Description</label>
+        <input
+          class="form-input rounded my-2"
           type="text"
           name="description"
           placeholder="Description"
           bind:value={description}
-        /></label
-      >
-      <label
-        >Amount<input
+        />
+      </div>
+      <div>
+        <label for="amount" class="mr-2">Amount</label>
+        <input
+          class="form-input rounded my-2"
           type="number"
           step="0.01"
           name="amount"
           placeholder="0.00"
           bind:value={amount}
-        /></label
-      >
+        />
+      </div>
     </div>
   </div>
   <button
-    class="p-2 bg-indigo-500 rounded mx-auto my-3 w-1/2 text-white font-bold"
+    class="px-4 py-3 bg-indigo-500 rounded mx-auto my-3 w-1/2 text-white font-bold text-xl"
     type="submit">Submit</button
   >
 </form>
