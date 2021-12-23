@@ -71,8 +71,10 @@
       <div>
         <label for="amount" class="mr-2">Amount</label>
         <input
+          inputmode="decimal"
           class="form-input rounded my-2"
           type="number"
+          pattern={`^\d*(\.\d{(0, 2)})?$`}
           step="0.01"
           name="amount"
           placeholder="0.00"
