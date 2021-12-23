@@ -4,6 +4,7 @@
   let description: string;
   let amount: number;
   let transactionType: string = "expense";
+  let inputRef: HTMLInputElement;
 
   const transformAmount = (amount: number) =>
     transactionType === "expense" ? -amount : amount;
@@ -18,6 +19,7 @@
     });
     description = "";
     amount = null;
+    inputRef.focus();
     fetchTransactions();
   };
 </script>
@@ -66,6 +68,7 @@
           name="description"
           placeholder="Description"
           bind:value={description}
+          bind:this={inputRef}
         />
       </div>
       <div>

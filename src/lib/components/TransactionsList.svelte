@@ -1,5 +1,6 @@
 <script lang="ts">
   import { formatDollarAmount } from "$lib/formatDollarAmount";
+  import { fade } from "svelte/transition";
 
   import type { Transaction } from "$lib/types";
   import DeleteIcon from "./DeleteIcon.svelte";
@@ -16,8 +17,8 @@
 </script>
 
 <ul class="shadow rounded m-1 p-1 bg-white">
-  {#each transactions as transaction}
-    <li class="p-3 hover:font-bold border-b last:border-none">
+  {#each transactions as transaction (transaction._id)}
+    <li class="p-3 hover:font-bold border-b last:border-none" transition:fade>
       <div class="flex items-center">
         <button
           class="mr-1"
