@@ -31,23 +31,31 @@
       <div class="flex gap-5">
         <div class="flex items-center gap-1">
           <input
-            name="transactionType-expense"
+            id="transactionType-expense"
             type="radio"
-            class="form-radio"
+            class="peer form-radio hidden"
             bind:group={transactionType}
             value="expense"
-            checked
           />
-          <label for="transactionType-expense">Expense</label>
+          <label
+            for="transactionType-expense"
+            class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
+            >Expense</label
+          >
         </div>
         <div class="flex items-center gap-1">
           <input
-            name="transactionType-income"
+            id="transactionType-income"
             type="radio"
+            class="peer form-radio hidden"
             bind:group={transactionType}
             value="income"
           />
-          <label for="transactionType-income">Income</label>
+          <label
+            for="transactionType-income"
+            class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
+            >Income</label
+          >
         </div>
       </div>
       <div>
