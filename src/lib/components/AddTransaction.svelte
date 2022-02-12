@@ -3,17 +3,24 @@
   import * as yup from "yup";
   export let fetchTransactions: () => Promise<void>;
 
+  enum TransactionType {
+    EXPENSE = "EXPENSE",
+    INCOME = "INCOME",
+  }
+
   const { form, errors, isSubmitting, handleChange, handleSubmit } = createForm(
     {
       initialValues: {
         description: "",
         amount: 0,
-        transactionType: "EXPENSE",
+        transactionType: TransactionType.EXPENSE,
       },
       validationSchema: yup.object().shape({
         description: yup.string().required("Please enter a description"),
         amount: yup.number().not([0], "Please enter an amount").required(),
-        transactionType: yup.string().oneOf(["EXPENSE", "INCOME"]),
+        transactionType: yup
+          .string()
+          .oneOf([TransactionType.EXPENSE, TransactionType.INCOME]),
       }),
 
       onSubmit: async ({ description, amount, transactionType }) => {
@@ -24,7 +31,8 @@
           },
           body: JSON.stringify({
             description,
-            amount: transactionType === "EXPENSE" ? -amount : amount,
+            amount:
+              transactionType === TransactionType.EXPENSE ? -amount : amount,
           }),
         });
         fetchTransactions();
@@ -50,12 +58,12 @@
           >
             <option
               class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
-              value={"EXPENSE"}>Expense</option
+              value={TransactionType.EXPENSE}>Expense</option
             >
 
             <option
               class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
-              value={"INCOME"}>Income</option
+              value={TransactionType.INCOME}>Income</option
             >
           </select>
         </div>
