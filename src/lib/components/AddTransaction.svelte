@@ -2,43 +2,51 @@
   import { createForm } from "svelte-forms-lib";
   import * as yup from "yup";
   export let fetchTransactions: () => Promise<void>;
+  let inputRef: HTMLInputElement;
 
   enum TransactionType {
     EXPENSE = "EXPENSE",
     INCOME = "INCOME",
   }
 
-  const { form, errors, isSubmitting, handleChange, handleSubmit } = createForm(
-    {
-      initialValues: {
-        description: "",
-        amount: 0,
-        transactionType: TransactionType.EXPENSE,
-      },
-      validationSchema: yup.object().shape({
-        description: yup.string().required("Please enter a description"),
-        amount: yup.number().not([0], "Please enter an amount").required(),
-        transactionType: yup
-          .string()
-          .oneOf([TransactionType.EXPENSE, TransactionType.INCOME]),
-      }),
-
-      onSubmit: async ({ description, amount, transactionType }) => {
-        await fetch("/api/transactions", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            description,
-            amount:
-              transactionType === TransactionType.EXPENSE ? -amount : amount,
-          }),
-        });
-        fetchTransactions();
-      },
+  const {
+    form,
+    errors,
+    isSubmitting,
+    handleChange,
+    handleSubmit,
+    handleReset,
+  } = createForm({
+    initialValues: {
+      description: "",
+      amount: 0,
+      transactionType: TransactionType.EXPENSE,
     },
-  );
+    validationSchema: yup.object().shape({
+      description: yup.string().required("Please enter a description"),
+      amount: yup.number().not([0], "Please enter an amount").required(),
+      transactionType: yup
+        .string()
+        .oneOf([TransactionType.EXPENSE, TransactionType.INCOME]),
+    }),
+
+    onSubmit: async ({ description, amount, transactionType }) => {
+      await fetch("/api/transactions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          description,
+          amount:
+            transactionType === TransactionType.EXPENSE ? -amount : amount,
+        }),
+      });
+      handleReset();
+      inputRef.focus();
+      fetchTransactions();
+    },
+  });
 </script>
 
 <form
@@ -90,6 +98,7 @@
             name="description"
             placeholder="Description"
             bind:value={$form.description}
+            bind:this={inputRef}
           />
         </div>
         {#if $errors.description}
