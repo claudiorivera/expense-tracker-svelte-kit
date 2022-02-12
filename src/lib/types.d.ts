@@ -6,5 +6,4 @@ export interface Transaction {
   _id: Types.ObjectId;
   description: string;
   amount: number;
-  transactionType: "INCOME" | "EXPENSE";
 }

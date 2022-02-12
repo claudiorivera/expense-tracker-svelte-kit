@@ -8,10 +8,6 @@ const TransactionSchema = new mongoose.Schema<Transaction>({
   amount: {
     type: Number,
   },
-  transactionType: {
-    type: String,
-    default: "EXPENSE",
-  },
 });
 
 export const TransactionModel =

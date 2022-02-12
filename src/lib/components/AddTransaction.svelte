@@ -24,8 +24,7 @@
           },
           body: JSON.stringify({
             description,
-            amount,
-            transactionType,
+            amount: transactionType === "EXPENSE" ? -amount : amount,
           }),
         });
         fetchTransactions();
