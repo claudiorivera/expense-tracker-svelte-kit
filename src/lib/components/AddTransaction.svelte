@@ -49,23 +49,36 @@
     <div class="flex-grow flex flex-col items-end">
       <div class="flex gap-5">
         <div class="flex items-center gap-1">
-          <select
+          <input
+            id="transactionType-expense"
             name="transactionType"
-            class="rounded"
-            id="transactionType"
             on:change={handleChange}
-            bind:value={$form.transactionType}
+            type="radio"
+            class="peer form-radio hidden"
+            value={TransactionType.EXPENSE}
+            checked={$form.transactionType === TransactionType.EXPENSE}
+          />
+          <label
+            for="transactionType-expense"
+            class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
+            >Expense</label
           >
-            <option
-              class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
-              value={TransactionType.EXPENSE}>Expense</option
-            >
-
-            <option
-              class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
-              value={TransactionType.INCOME}>Income</option
-            >
-          </select>
+        </div>
+        <div class="flex items-center gap-1">
+          <input
+            id="transactionType-income"
+            name="transactionType"
+            on:change={handleChange}
+            type="radio"
+            class="peer form-radio hidden"
+            value={TransactionType.INCOME}
+            checked={$form.transactionType === TransactionType.INCOME}
+          />
+          <label
+            for="transactionType-income"
+            class="my-2 p-2 w-20 text-center bg-slate-400 rounded ring  ring-slate-400 bg-transparent peer-checked:bg-indigo-500 peer-checked:text-white peer-checked:ring-indigo-600 cursor-pointer"
+            >Income</label
+          >
         </div>
       </div>
       <div class="flex flex-col">
