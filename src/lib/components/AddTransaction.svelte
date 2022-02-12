@@ -44,6 +44,7 @@
         <div class="flex items-center gap-1">
           <select
             name="transactionType"
+            class="rounded"
             id="transactionType"
             on:change={handleChange}
             bind:value={$form.transactionType}
@@ -60,31 +61,35 @@
           </select>
         </div>
       </div>
-      <div class="flex items-center gap-1">
-        <label for="description" class="mr-2">Description</label>
-        <input
-          class="form-input rounded my-2"
-          type="text"
-          name="description"
-          placeholder="Description"
-          bind:value={$form.description}
-        />
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1">
+          <label for="description" class="mr-2">Description</label>
+          <input
+            class="form-input rounded my-2"
+            type="text"
+            name="description"
+            placeholder="Description"
+            bind:value={$form.description}
+          />
+        </div>
         {#if $errors.description}
-          <small>{$errors.description}</small>
+          <small class="self-end text-red-500">{$errors.description}</small>
         {/if}
       </div>
-      <div class="flex items-center gap-1">
-        <label for="amount" class="mr-2">Amount</label>
-        <input
-          inputmode="decimal"
-          class="form-input rounded my-2"
-          type="number"
-          step="0.01"
-          name="amount"
-          bind:value={$form.amount}
-        />
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1">
+          <label for="amount" class="mr-2">Amount</label>
+          <input
+            inputmode="decimal"
+            class="form-input rounded my-2"
+            type="number"
+            step="0.01"
+            name="amount"
+            bind:value={$form.amount}
+          />
+        </div>
         {#if $errors.amount}
-          <small>{$errors.amount}</small>
+          <small class="self-end text-red-500">{$errors.amount}</small>
         {/if}
       </div>
     </div>
