@@ -1,7 +1,7 @@
 import { TransactionModel } from "$lib/models/Transaction";
 import { mongooseConnect } from "$lib/mongooseConnect";
 import type { Transaction } from "$lib/types";
-import type { Request } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit/types/internal";
 
 export const get = async (): Promise<{ body: Transaction[] }> => {
   await mongooseConnect();
@@ -13,8 +13,11 @@ export const get = async (): Promise<{ body: Transaction[] }> => {
   };
 };
 
-export const post = async (req: Request): Promise<{ body: Transaction }> => {
-  const transaction = await TransactionModel.create(req.body);
+export const post = async ({
+  request,
+}: RequestEvent): Promise<{ body: Transaction }> => {
+  const body = await request.json();
+  const transaction = await TransactionModel.create(body);
 
   return {
     body: transaction,
