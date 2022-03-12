@@ -1,15 +1,16 @@
 import type { Transaction } from "$lib/types";
-import mongoose from "mongoose";
+import { model, models, Schema } from "mongoose";
 
-const TransactionSchema = new mongoose.Schema<Transaction>({
+const TransactionSchema = new Schema<Transaction>({
   description: {
     type: String,
+    required: true,
   },
   amount: {
     type: Number,
+    required: true,
   },
 });
 
 export const TransactionModel =
-  mongoose.models.Transaction ||
-  mongoose.model<Transaction>("Transaction", TransactionSchema);
+  models.Transaction || model<Transaction>("Transaction", TransactionSchema);

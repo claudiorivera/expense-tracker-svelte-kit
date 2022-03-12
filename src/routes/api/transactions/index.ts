@@ -2,8 +2,9 @@ import { TransactionModel } from "$lib/models/Transaction";
 import { mongooseConnect } from "$lib/mongooseConnect";
 import type { Transaction } from "$lib/types";
 import type { RequestEvent } from "@sveltejs/kit/types/internal";
+import type { HydratedDocument } from "mongoose";
 
-export const get = async (): Promise<{ body: Transaction[] }> => {
+export const get = async () => {
   await mongooseConnect();
 
   const transactions = await TransactionModel.find();
@@ -13,13 +14,15 @@ export const get = async (): Promise<{ body: Transaction[] }> => {
   };
 };
 
-export const post = async ({
-  request,
-}: RequestEvent): Promise<{ body: Transaction }> => {
+export const post = async ({ request }: RequestEvent) => {
+  await mongooseConnect();
+
   const body = await request.json();
-  const transaction = await TransactionModel.create(body);
+  const transaction = new TransactionModel(body);
+  const savedTransaction = await transaction.save();
 
   return {
-    body: transaction,
+    status: 201,
+    body: savedTransaction,
   };
 };
