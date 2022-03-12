@@ -1,7 +1,8 @@
 <script lang="ts">
   import { formatDollarAmount } from "$lib/formatDollarAmount";
+  import type { Transaction } from "$lib/types";
 
-  export let transactions;
+  export let transactions: Transaction[];
 
   $: totalIncome = transactions
     .filter((transaction) => transaction.amount > 0)

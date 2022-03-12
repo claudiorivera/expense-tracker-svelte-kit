@@ -25,12 +25,13 @@
   import TransactionsList from "$lib/components/TransactionsList.svelte";
   import { formatDollarAmount } from "$lib/formatDollarAmount";
   import type { Transaction } from "$lib/types";
+  import type { HydratedDocument } from "mongoose";
 
-  export let transactions: Transaction[];
+  export let transactions: HydratedDocument<Transaction>[];
 
   const fetchTransactions = async () => {
     const res = await fetch("/api/transactions");
-    transactions = (await res.json()) as Transaction[];
+    transactions = await res.json();
   };
 
   $: balance = transactions.reduce((acc, curr) => {

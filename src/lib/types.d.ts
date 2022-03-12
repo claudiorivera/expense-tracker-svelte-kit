@@ -3,7 +3,6 @@
  * inside `global.d.ts` and removing `export` keyword
  */
 export interface Transaction {
-  _id: Types.ObjectId;
   description: string;
   amount: number;
 }
