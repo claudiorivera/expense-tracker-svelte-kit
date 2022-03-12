@@ -1,19 +1,19 @@
 # expense-tracker-svelte-kit
 
-This is my version of the Expense Tracker from Traversy Media's YouTube course, remade from scratch using SvelteKit and made to be deployed on Vercel.
+This is my version of the [Expense Tracker from Traversy Media's YouTube course](https://github.com/bradtraversy/expense-tracker-react), remade from scratch using [SvelteKit](https://kit.svelte.dev).
 
 ## Prerequisites
 
-In order to develop locally, you'll need the [Vercel CLI](https://vercel.com/cli)
+- [pnpm](https://pnpm.io)
 
 ## Install
 
-`yarn`
+`pnpm i`
 
 ## Config
 
-Add a `.env.local` file that includes a `MONGODB_URI` value.
+Inject `MONGODB_URI` into your environment (ie. with `direnv` or `vercel pull` or pre-pending scripts with `MONGODB_URI=`)
 
 ## Develop
 
-`vercel dev`
+`pnpm dev`
