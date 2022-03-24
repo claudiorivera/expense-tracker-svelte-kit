@@ -35,7 +35,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/lato": "4.5.3",
+    "@fontsource/lato": "4.5.5",
     "@lukeed/uuid": "2.0.0",
     "@tailwindcss/forms": "0.5.0",
     "cookie": "0.4.2",
