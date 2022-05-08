@@ -14,7 +14,7 @@ specifiers:
   cssnano: 5.1.7
   eslint: 8.15.0
   eslint-config-prettier: 8.5.0
-  eslint-plugin-svelte3: 3.4.1
+  eslint-plugin-svelte3: 4.0.0
   mongoose: 6.3.2
   postcss: 8.4.13
   postcss-load-config: 3.1.4
@@ -48,7 +48,7 @@ devDependencies:
   cssnano: 5.1.7_postcss@8.4.13
   eslint: 8.15.0
   eslint-config-prettier: 8.5.0_eslint@8.15.0
-  eslint-plugin-svelte3: 3.4.1_usjo443ynfgvutifl4ot2fkxzy
+  eslint-plugin-svelte3: 4.0.0_usjo443ynfgvutifl4ot2fkxzy
   postcss: 8.4.13
   postcss-load-config: 3.1.4_postcss@8.4.13
   prettier: 2.6.2
@@ -1069,11 +1069,10 @@ packages:
       eslint: 8.15.0
     dev: true
 
-  /eslint-plugin-svelte3/3.4.1_usjo443ynfgvutifl4ot2fkxzy:
-    resolution: {integrity: sha512-7p59WG8qV8L6wLdl4d/c3mdjkgVglQCdv5XOTk/iNPBKXuuV+Q0eFP5Wa6iJd/G2M1qR3BkLPEzaANOqKAZczw==}
-    engines: {node: '>=10'}
+  /eslint-plugin-svelte3/4.0.0_usjo443ynfgvutifl4ot2fkxzy:
+    resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
     peerDependencies:
-      eslint: '>=6.0.0'
+      eslint: '>=8.0.0'
       svelte: ^3.2.0
     dependencies:
       eslint: 8.15.0
