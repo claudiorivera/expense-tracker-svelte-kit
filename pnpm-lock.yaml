@@ -22,7 +22,7 @@ specifiers:
   prettier: 2.6.2
   prettier-plugin-svelte: 2.7.0
   svelte: 3.48.0
-  svelte-check: 2.7.1
+  svelte-check: 2.7.2
   svelte-forms-lib: 2.0.1
   svelte-preprocess: 4.10.6
   tailwindcss: 3.0.24
@@ -56,7 +56,7 @@ devDependencies:
   prettier: 2.6.2
   prettier-plugin-svelte: 2.7.0_kkjbqzpydplecjtkxrgomroeru
   svelte: 3.48.0
-  svelte-check: 2.7.1_bwfybwdzwmlevsatlte2x4gwcy
+  svelte-check: 2.7.2_bwfybwdzwmlevsatlte2x4gwcy
   svelte-preprocess: 4.10.6_nrkokdrdekzxnvk725432prq2q
   tailwindcss: 3.0.24
   tslib: 2.4.0
@@ -1642,7 +1642,7 @@ packages:
       has: 1.0.3
 
   /is-extglob/2.1.1:
-    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=}
+    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
 
   /is-fullwidth-code-point/1.0.0:
@@ -2822,8 +2822,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-check/2.7.1_bwfybwdzwmlevsatlte2x4gwcy:
-    resolution: {integrity: sha512-vHVu2+SQ6ibt77iTQaq2oiOjBgGL48qqcg0ZdEOsP5pPOjgeyR9QbnaEdzdBs9nsVYBc/42haKtzb2uFqS8GVw==}
+  /svelte-check/2.7.2_bwfybwdzwmlevsatlte2x4gwcy:
+    resolution: {integrity: sha512-TuVX4YtXHbRM8sVuK5Jk+mKWdm3f0d6hvAC6qCTp8yUszGZewpEBCo2V5fRWZCiz+0J4OCiDHOS+DFMxv39rJA==}
     hasBin: true
     peerDependencies:
       svelte: ^3.24.0
