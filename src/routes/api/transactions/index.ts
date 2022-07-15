@@ -4,21 +4,22 @@ import type { Transaction } from "$lib/types";
 import type { RequestEvent } from "@sveltejs/kit/types/internal";
 import type { HydratedDocument } from "mongoose";
 
-export const get = async () => {
+export const GET = async () => {
   await mongooseConnect();
 
-  const transactions = await TransactionModel.find();
+  const transactions: HydratedDocument<Transaction>[] =
+    await TransactionModel.find();
 
   return {
     body: transactions,
   };
 };
 
-export const post = async ({ request }: RequestEvent) => {
+export const POST = async ({ request }: RequestEvent) => {
   await mongooseConnect();
 
   const body = await request.json();
-  const transaction = new TransactionModel(body);
+  const transaction: HydratedDocument<Transaction> = new TransactionModel(body);
   const savedTransaction = await transaction.save();
 
   return {
