@@ -1,5 +1,6 @@
 import type { Transaction } from "$lib/types";
-import { model, models, Schema } from "mongoose";
+import mongoose from "mongoose";
+const { model, models, Schema } = mongoose;
 
 const TransactionSchema = new Schema<Transaction>({
   description: {
