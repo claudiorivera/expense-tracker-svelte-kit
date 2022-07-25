@@ -16,7 +16,7 @@ specifiers:
   eslint: 8.20.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
-  mongoose: 6.4.6
+  mongoose: 6.4.7
   postcss: 8.4.14
   postcss-load-config: 4.0.1
   prettier: 2.7.1
@@ -36,14 +36,14 @@ dependencies:
   '@lukeed/uuid': 2.0.0
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.6
   cookie: 0.5.0
-  mongoose: 6.4.6
+  mongoose: 6.4.7
   svelte-forms-lib: 2.0.1
   yup: 0.32.11
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.63
   '@sveltejs/adapter-vercel': 1.0.0-next.65
-  '@sveltejs/kit': 1.0.0-next.393_svelte@3.49.0+vite@3.0.3
+  '@sveltejs/kit': 1.0.0-next.394_svelte@3.49.0+vite@3.0.3
   '@types/cookie': 0.5.1
   '@typescript-eslint/eslint-plugin': 5.31.0_d5zwcxr4bwkhmuo464cb3a2puu
   '@typescript-eslint/parser': 5.31.0_he2ccbldppg44uulnyq4rwocfa
@@ -227,8 +227,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.393_svelte@3.49.0+vite@3.0.3:
-    resolution: {integrity: sha512-B7tCEcHJepsgJxY3jonOKhxGjB/58h9UWa7KZKvgSTswQOcuDZ9IXyQ1LRizc2BhcN2htUUVMuwU77NmM7jGFg==}
+  /@sveltejs/kit/1.0.0-next.394_svelte@3.49.0+vite@3.0.3:
+    resolution: {integrity: sha512-YfRNSKdbvihHFvmQodaMlChcyf9dfU36FwK8WYQF5jqEmiRajLBb/ooU6RqPA0Z6j5okJHDSYBwxW8TP+nc+gg==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:
@@ -1737,8 +1737,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/6.4.6:
-    resolution: {integrity: sha512-ZAfNCWgXhwev6k/+rMzjHIJ/+wLkundQU/i+aUTqmCgGoYqc+B5e4EC4Y3E1XaLzNXiWID1/vocSM6zs5IAGvA==}
+  /mongoose/6.4.7:
+    resolution: {integrity: sha512-NvWxRkhXUt4RXR4kj47c8LApf4EIl2Ewt24ZojQiVbHy4mfqpW7UKUV698p8zIdYQ9EEeEfzDlwd4n7B3NGRnA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.6.4

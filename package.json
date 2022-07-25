@@ -41,7 +41,7 @@
     "@lukeed/uuid": "2.0.0",
     "@tailwindcss/forms": "0.5.2",
     "cookie": "0.5.0",
-    "mongoose": "6.4.6",
+    "mongoose": "6.4.7",
     "svelte-forms-lib": "2.0.1",
     "yup": "0.32.11"
   },
