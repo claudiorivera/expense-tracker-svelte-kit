@@ -16,7 +16,7 @@ specifiers:
   eslint: 8.20.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
-  mongoose: 6.4.7
+  mongoose: 6.5.0
   postcss: 8.4.14
   postcss-load-config: 4.0.1
   prettier: 2.7.1
@@ -36,14 +36,14 @@ dependencies:
   '@lukeed/uuid': 2.0.0
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.6
   cookie: 0.5.0
-  mongoose: 6.4.7
+  mongoose: 6.5.0
   svelte-forms-lib: 2.0.1
   yup: 0.32.11
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.64
   '@sveltejs/adapter-vercel': 1.0.0-next.66
-  '@sveltejs/kit': 1.0.0-next.395_svelte@3.49.0+vite@3.0.3
+  '@sveltejs/kit': 1.0.0-next.396_svelte@3.49.0+vite@3.0.3
   '@types/cookie': 0.5.1
   '@typescript-eslint/eslint-plugin': 5.31.0_d5zwcxr4bwkhmuo464cb3a2puu
   '@typescript-eslint/parser': 5.31.0_he2ccbldppg44uulnyq4rwocfa
@@ -227,8 +227,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.395_svelte@3.49.0+vite@3.0.3:
-    resolution: {integrity: sha512-o8sFZVxUNTwLPs2ZwrKSyZfbU/VIRq2NnaQQ9JcSzr0Bs+M09rrjTuSpFy0sXUCZkBh3oVWFgrVqABwEOEHoSQ==}
+  /@sveltejs/kit/1.0.0-next.396_svelte@3.49.0+vite@3.0.3:
+    resolution: {integrity: sha512-bKFpuzp9QxPkOIOEIeNeedvxEMORNqBPxUmoJXDP/Se7MrSfcxYiamjBcKrG+bgGNWmV39nD3EvUox+CXno/Ig==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:
@@ -625,8 +625,8 @@ packages:
       update-browserslist-db: 1.0.4_browserslist@4.21.1
     dev: true
 
-  /bson/4.6.4:
-    resolution: {integrity: sha512-TdQ3FzguAu5HKPPlr0kYQCyrYUYh8tFM+CMTpxjNzVzxeiJY00Rtuj3LXLHSgiGvmaWlZ8PE+4KyM2thqE38pQ==}
+  /bson/4.6.5:
+    resolution: {integrity: sha512-uqrgcjyOaZsHfz7ea8zLRCLe1u+QGUSzMZmvXqO24CDW7DWoW1qiN9folSwa7hSneTSgM2ykDIzF5kcQQ8cwNw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       buffer: 5.7.1
@@ -1730,11 +1730,11 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.7.0:
-    resolution: {integrity: sha512-HhVar6hsUeMAVlIbwQwWtV36iyjKd9qdhY+s4wcU8K6TOj4Q331iiMy+FoPuxEntDIijTYWivwFJkLv8q/ZgvA==}
+  /mongodb/4.8.1:
+    resolution: {integrity: sha512-/NyiM3Ox9AwP5zrfT9TXjRKDJbXlLaUDQ9Rg//2lbg8D2A8GXV0VidYYnA/gfdK6uwbnL4FnAflH7FbGw3TS7w==}
     engines: {node: '>=12.9.0'}
     dependencies:
-      bson: 4.6.4
+      bson: 4.6.5
       denque: 2.0.1
       mongodb-connection-string-url: 2.5.2
       socks: 2.6.2
@@ -1742,13 +1742,13 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/6.4.7:
-    resolution: {integrity: sha512-NvWxRkhXUt4RXR4kj47c8LApf4EIl2Ewt24ZojQiVbHy4mfqpW7UKUV698p8zIdYQ9EEeEfzDlwd4n7B3NGRnA==}
+  /mongoose/6.5.0:
+    resolution: {integrity: sha512-swOX8ZEbmCeJaEs29B1j67StBIhuOccNNkipbVhsnLYYCDpNE7heM9W54MFGwN5es9tGGoxINHSzOhJ9kTOZGg==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      bson: 4.6.4
+      bson: 4.6.5
       kareem: 2.4.1
-      mongodb: 4.7.0
+      mongodb: 4.8.1
       mpath: 0.9.0
       mquery: 4.0.3
       ms: 2.1.3
