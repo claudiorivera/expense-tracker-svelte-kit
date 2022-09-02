@@ -9,7 +9,5 @@ export const DELETE = async ({ params }: RequestEvent) => {
     _id: params.id,
   });
 
-  return {
-    status: 204,
-  };
+  return new Response(undefined, { status: 204 });
 };

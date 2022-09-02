@@ -1,33 +1,14 @@
-<script context="module" lang="ts">
-  export const load = async ({ fetch }) => {
-    const url = "/api/transactions";
-    const res = await fetch(url);
-
-    if (res.ok) {
-      return {
-        props: {
-          transactions: await res.json(),
-        },
-      };
-    }
-
-    return {
-      status: res.status,
-      error: new Error(`Could not load ${url}`),
-    };
-  };
-</script>
-
 <script lang="ts">
   import AddTransaction from "$lib/components/AddTransaction.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import IncomeExpenseSummary from "$lib/components/IncomeExpenseSummary.svelte";
   import TransactionsList from "$lib/components/TransactionsList.svelte";
   import { formatDollarAmount } from "$lib/formatDollarAmount";
-  import type { Transaction } from "$lib/types";
-  import type { HydratedDocument } from "mongoose";
+  import type { PageData } from "./$types";
 
-  export let transactions: HydratedDocument<Transaction>[];
+  export let data: PageData;
+  let { transactions } = data;
+  $: ({ transactions } = data);
 
   const fetchTransactions = async () => {
     const res = await fetch("/api/transactions");
