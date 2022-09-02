@@ -5,7 +5,7 @@ specifiers:
   '@lukeed/uuid': 2.0.0
   '@sveltejs/adapter-vercel': 1.0.0-next.72
   '@sveltejs/kit': 1.0.0-next.463
-  '@tailwindcss/forms': 0.5.2
+  '@tailwindcss/forms': 0.5.3
   '@types/cookie': 0.5.1
   '@typescript-eslint/eslint-plugin': 5.36.1
   '@typescript-eslint/parser': 5.36.1
@@ -33,7 +33,7 @@ specifiers:
 dependencies:
   '@fontsource/lato': 4.5.9
   '@lukeed/uuid': 2.0.0
-  '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.8
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.1.8
   cookie: 0.5.0
   mongoose: 6.5.0
   svelte-forms-lib: 2.0.1
@@ -262,8 +262,8 @@ packages:
       - supports-color
     dev: true
 
-  /@tailwindcss/forms/0.5.2_tailwindcss@3.1.8:
-    resolution: {integrity: sha512-pSrFeJB6Bg1Mrg9CdQW3+hqZXAKsBrSG9MAfFLKy1pVA4Mb4W7C0k7mEhlmS2Dfo/otxrQOET7NJiJ9RrS563w==}
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
