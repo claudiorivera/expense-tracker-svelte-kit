@@ -4,10 +4,13 @@
   import IncomeExpenseSummary from "$lib/components/IncomeExpenseSummary.svelte";
   import TransactionsList from "$lib/components/TransactionsList.svelte";
   import { formatDollarAmount } from "$lib/formatDollarAmount";
+  import type { Transaction } from "$lib/types";
+  import type { HydratedDocument } from "mongoose";
   import type { PageData } from "./$types";
 
   export let data: PageData;
-  let { transactions } = data;
+  let { transactions }: { transactions: HydratedDocument<Transaction>[] } =
+    data;
   $: ({ transactions } = data);
 
   const fetchTransactions = async () => {
