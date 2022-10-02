@@ -1,4 +1,11 @@
 {
   "extends": ["config:base"],
-  "commitMessagePrefix": "🤖"
+  "commitMessagePrefix": "🤖",
+  "packageRules":[
+    {
+      "matchPackagePatterns": ["@sveltejs/kit"],
+      "groupName": "@sveltejs/kit",
+      "schedule": ["before 2am on monday"]
+    }
+  ]
 }
