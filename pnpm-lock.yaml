@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fontsource/lato': 4.5.9
+  '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
   '@sveltejs/adapter-vercel': 1.0.0-next.77
   '@sveltejs/kit': 1.0.0-next.506
@@ -31,7 +31,7 @@ specifiers:
   yup: 0.32.11
 
 dependencies:
-  '@fontsource/lato': 4.5.9
+  '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.1.8
   cookie: 0.5.0
@@ -97,8 +97,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fontsource/lato/4.5.9:
-    resolution: {integrity: sha512-VkDnHBbPee/KMAUuBwe3rEKRDECo1MsA+I+ucZNU6FYdHrsv+SKpYgNr7nk/OhoaGrn9PrpXcmcd9eoD4J3Y6Q==}
+  /@fontsource/lato/4.5.10:
+    resolution: {integrity: sha512-2hYR6r661Cq9B8zugtu6yxuOKqrVhAgfOSaPSq8XoxbC4ebsl0KOTy/vPoP+9U7JuQVLfrmikirW4a9Z0nDUug==}
     dev: false
 
   /@humanwhocodes/config-array/0.10.5:
