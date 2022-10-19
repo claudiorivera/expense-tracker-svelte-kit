@@ -4,7 +4,7 @@ specifiers:
   '@faker-js/faker': 7.6.0
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@sveltejs/adapter-vercel': 1.0.0-next.79
+  '@sveltejs/adapter-vercel': 1.0.0-next.80
   '@sveltejs/kit': 1.0.0-next.516
   '@tailwindcss/forms': 0.5.3
   '@types/cookie': 0.5.1
@@ -42,7 +42,7 @@ dependencies:
 
 devDependencies:
   '@faker-js/faker': 7.6.0
-  '@sveltejs/adapter-vercel': 1.0.0-next.79
+  '@sveltejs/adapter-vercel': 1.0.0-next.80
   '@sveltejs/kit': 1.0.0-next.516_svelte@3.52.0+vite@3.1.8
   '@types/cookie': 0.5.1
   '@typescript-eslint/eslint-plugin': 5.40.1_ukgdydjtebaxmxfqp5v5ulh64y
@@ -213,8 +213,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.79:
-    resolution: {integrity: sha512-Mitw34vS+wR/qxZm6qOUltf910N8gcekYZHaEVxO6HaE/9LyEZ/O03e9rRKwo4LAWrHXOkHMdUxvv1VcS9BqmQ==}
+  /@sveltejs/adapter-vercel/1.0.0-next.80:
+    resolution: {integrity: sha512-a1ibKgN5RsNw6HPzhNKrPuEndgYRXCYlGIioVzfKpt/tEr4RuV5o/bST2FBgjCIWCqajKhWg1QLZmN2DZfPy6Q==}
     dependencies:
       '@vercel/nft': 0.22.0
       esbuild: 0.15.10
