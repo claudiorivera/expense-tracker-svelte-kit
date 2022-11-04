@@ -25,7 +25,7 @@ specifiers:
   svelte-check: 2.9.2
   svelte-forms-lib: 2.0.1
   svelte-preprocess: 4.10.7
-  tailwindcss: 3.2.1
+  tailwindcss: 3.2.2
   tslib: 2.4.1
   typescript: 4.8.4
   vite: 3.2.2
@@ -34,7 +34,7 @@ specifiers:
 dependencies:
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.1
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.2
   cookie: 0.5.0
   mongoose: 6.7.1
   svelte-forms-lib: 2.0.1
@@ -59,7 +59,7 @@ devDependencies:
   svelte: 3.52.0
   svelte-check: 2.9.2_xyvwwpusdp7eiuesisaivc7wmm
   svelte-preprocess: 4.10.7_4n3z2octtzg5pdokl7pjruqnki
-  tailwindcss: 3.2.1_postcss@8.4.18
+  tailwindcss: 3.2.2_postcss@8.4.18
   tslib: 2.4.1
   typescript: 4.8.4
   vite: 3.2.2
@@ -1035,13 +1035,13 @@ packages:
       - supports-color
     dev: true
 
-  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.1:
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.2:
     resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
     dev: false
 
   /@trysound/sax/0.2.0:
@@ -3803,8 +3803,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.2.1_postcss@8.4.18:
-    resolution: {integrity: sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==}
+  /tailwindcss/3.2.2_postcss@8.4.18:
+    resolution: {integrity: sha512-c2GtSdqg+harR4QeoTmex0Ngfg8IIHNeLQH5yr2B9uZbZR1Xt1rYbjWOWTcj3YLTZhrmZnPowoQDbSRFyZHQ5Q==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
