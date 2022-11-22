@@ -16,7 +16,7 @@ specifiers:
   eslint: 8.28.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
-  mongoose: 6.7.2
+  mongoose: 6.7.3
   postcss: 8.4.19
   postcss-load-config: 4.0.1
   prettier: 2.7.1
@@ -36,7 +36,7 @@ dependencies:
   '@lukeed/uuid': 2.0.0
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   cookie: 0.5.0
-  mongoose: 6.7.2
+  mongoose: 6.7.3
   svelte-forms-lib: 2.0.1
   yup: 0.32.11
 
@@ -667,6 +667,7 @@ packages:
 
   /@aws-sdk/util-base64-browser/3.188.0:
     resolution: {integrity: sha512-qlH+5NZBLiyKziL335BEPedYxX6j+p7KFRWXvDQox9S+s+gLCayednpK+fteOhBenCcR9fUZOVuAPScy1I8qCg==}
+    deprecated: The package @aws-sdk/util-base64-browser has been renamed to @aws-sdk/util-base64. Please install the renamed package.
     dependencies:
       tslib: 2.4.1
     dev: false
@@ -675,6 +676,7 @@ packages:
   /@aws-sdk/util-base64-node/3.188.0:
     resolution: {integrity: sha512-r1dccRsRjKq+OhVRUfqFiW3sGgZBjHbMeHLbrAs9jrOjU2PTQ8PSzAXLvX/9lmp7YjmX17Qvlsg0NCr1tbB9OA==}
     engines: {node: '>= 12.0.0'}
+    deprecated: The package @aws-sdk/util-base64-node has been renamed to @aws-sdk/util-base64. Please install the renamed package.
     dependencies:
       '@aws-sdk/util-buffer-from': 3.188.0
       tslib: 2.4.1
@@ -2576,8 +2578,8 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.7.2:
-    resolution: {integrity: sha512-lrP2V5U1qhaf+z33fiIn7aYAZZ1fVDly+TkFRjTujNBF/FIHESATj2RbgAOSlWqv32fsZXkXejXzeVfjbv35Ow==}
+  /mongoose/6.7.3:
+    resolution: {integrity: sha512-bLC2Pt6Vpoov+1kBYvQgJXG/2DWXbfIvfK4Gh68kCdYGh6CVO31YxYuIGz70hyGwX2g4DmSzbs5IA8Px2neMCQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0
