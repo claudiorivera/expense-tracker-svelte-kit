@@ -16,7 +16,7 @@ specifiers:
   eslint: 8.28.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
-  mongoose: 6.7.4
+  mongoose: 6.7.5
   postcss: 8.4.19
   postcss-load-config: 4.0.1
   prettier: 2.8.0
@@ -36,7 +36,7 @@ dependencies:
   '@lukeed/uuid': 2.0.0
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   cookie: 0.5.0
-  mongoose: 6.7.4
+  mongoose: 6.7.5
   svelte-forms-lib: 2.0.1
   yup: 0.32.11
 
@@ -2567,8 +2567,8 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.7.4:
-    resolution: {integrity: sha512-0LWMrOa5U43cR3I/iRPnmyedoa6T8+QPxmFYdPgx4WAS0CdbSbOzAFSKeU6bndUY6cs4VkxKZGcuDM0twystCg==}
+  /mongoose/6.7.5:
+    resolution: {integrity: sha512-3ppxBxDUIoQKYISVpAg7hjmV1lkGBN3tN9AkQr1Vqc68L5k+Bo+uyfOhpbCFpCf5JZLcEO4cmuB5YX+d9h3plw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0
