@@ -16,7 +16,7 @@ specifiers:
   eslint: 8.30.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
-  mongoose: 6.8.0
+  mongoose: 6.8.1
   postcss: 8.4.20
   postcss-load-config: 4.0.1
   prettier: 2.8.1
@@ -47,7 +47,7 @@ devDependencies:
   eslint: 8.30.0
   eslint-config-prettier: 8.5.0_eslint@8.30.0
   eslint-plugin-svelte3: 4.0.0_khrjkzzv5v2x7orkj5o7sxbz3a
-  mongoose: 6.8.0
+  mongoose: 6.8.1
   postcss: 8.4.20
   postcss-load-config: 4.0.1_postcss@8.4.20
   prettier: 2.8.1
@@ -2602,8 +2602,8 @@ packages:
       - aws-crt
     dev: true
 
-  /mongoose/6.8.0:
-    resolution: {integrity: sha512-zlUfjcLya3pLfLTxwyH5S9bZUolJWGKF2M7PEV0118jv4VWHR/krjb6LIWu1RPQN2rwYmnmjjzJLVhbhmHqSmg==}
+  /mongoose/6.8.1:
+    resolution: {integrity: sha512-utr2hclZ+/QlO+JuVd33dxzvLKtByEhaLj8mEO+tqCm6pgOboKv+DWcvJDEcCMl4Rgd1ubgfYz4cZ9BWyHmC3Q==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0
