@@ -5,7 +5,7 @@ specifiers:
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
   '@sveltejs/adapter-vercel': 1.0.0
-  '@sveltejs/kit': 1.0.0
+  '@sveltejs/kit': 1.0.1
   '@tailwindcss/forms': 0.5.3
   '@types/cookie': 0.5.1
   '@typescript-eslint/eslint-plugin': 5.47.0
@@ -35,8 +35,8 @@ devDependencies:
   '@faker-js/faker': 7.6.0
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@sveltejs/adapter-vercel': 1.0.0_@sveltejs+kit@1.0.0
-  '@sveltejs/kit': 1.0.0_svelte@3.55.0+vite@4.0.3
+  '@sveltejs/adapter-vercel': 1.0.0_@sveltejs+kit@1.0.1
+  '@sveltejs/kit': 1.0.1_svelte@3.55.0+vite@4.0.3
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   '@types/cookie': 0.5.1
   '@typescript-eslint/eslint-plugin': 5.47.0_ncmi6noazr3nzas7jxykisekym
@@ -1140,12 +1140,12 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0_@sveltejs+kit@1.0.0:
+  /@sveltejs/adapter-vercel/1.0.0_@sveltejs+kit@1.0.1:
     resolution: {integrity: sha512-3zM/7BJbtxBo02J4/2mpZyiHZtH6HAggND/xRaBiKjSsKSMYvKC4ipqVfHoESuW5NQNAnJVf1zMAQY2PPxv91w==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.0.0_svelte@3.55.0+vite@4.0.3
+      '@sveltejs/kit': 1.0.1_svelte@3.55.0+vite@4.0.3
       '@vercel/nft': 0.22.1
       esbuild: 0.16.3
     transitivePeerDependencies:
@@ -1153,9 +1153,9 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0_svelte@3.55.0+vite@4.0.3:
-    resolution: {integrity: sha512-6VgD5C3i2XOT7GRBi5LaPPLiFAmpiDkhKJNVt8fLg1RmaL6f7rT4Kiwi2XGpYRj3V1F4t1QRdsfmAkkDUKY3OA==}
-    engines: {node: '>=16.14'}
+  /@sveltejs/kit/1.0.1_svelte@3.55.0+vite@4.0.3:
+    resolution: {integrity: sha512-C41aCaDjA7xoUdsrc/lSdU1059UdLPIRE1vEIRRynzpMujNgp82bTMHkDosb6vykH6LrLf3tT2w2/5NYQhKYGQ==}
+    engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
     peerDependencies:
