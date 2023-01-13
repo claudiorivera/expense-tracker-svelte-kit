@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "7.6.0",
-    "@sveltejs/adapter-vercel": "1.0.1",
+    "@sveltejs/adapter-vercel": "1.0.2",
     "@sveltejs/kit": "1.0.7",
     "@types/cookie": "0.5.1",
     "@typescript-eslint/eslint-plugin": "5.48.1",
