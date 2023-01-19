@@ -4,7 +4,7 @@ specifiers:
   '@faker-js/faker': 7.6.0
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@sveltejs/adapter-vercel': 1.0.4
+  '@sveltejs/adapter-vercel': 1.0.5
   '@sveltejs/kit': 1.0.7
   '@tailwindcss/forms': 0.5.3
   '@types/cookie': 0.5.1
@@ -35,7 +35,7 @@ devDependencies:
   '@faker-js/faker': 7.6.0
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@sveltejs/adapter-vercel': 1.0.4_@sveltejs+kit@1.0.7
+  '@sveltejs/adapter-vercel': 1.0.5_@sveltejs+kit@1.0.7
   '@sveltejs/kit': 1.0.7_svelte@3.55.1+vite@4.0.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   '@types/cookie': 0.5.1
@@ -1140,8 +1140,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.4_@sveltejs+kit@1.0.7:
-    resolution: {integrity: sha512-kBh60gq+nB4258Vbu1G7vwofVz4HqTUbWf11N5PSOOqb5hoCalr5PXEhnn0wQwSE9eyFhehi/GCNQE7FC0dUhQ==}
+  /@sveltejs/adapter-vercel/1.0.5_@sveltejs+kit@1.0.7:
+    resolution: {integrity: sha512-TnFw+2ZwUuzguIeh013h0eiFmHylBuL1aV3jcUWbJmBLRo6YA0Ti8X8VXgFP4izP7XGuLKdpUIMg7HaZe21LbA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
