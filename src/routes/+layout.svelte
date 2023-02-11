@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "../app.css";
+  import "../app.postcss";
 </script>
 
 <main class="font-thin cursor-default antialiased bg-slate-50">
