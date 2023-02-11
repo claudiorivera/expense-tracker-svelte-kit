@@ -1,6 +1,6 @@
-import { error } from "@sveltejs/kit";
+import { error, type Load } from "@sveltejs/kit";
 
-export const load = async ({ fetch }) => {
+export const load: Load = async ({ fetch }) => {
   const url = "/api/transactions";
   const res = await fetch(url);
 
