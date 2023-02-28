@@ -4,7 +4,7 @@ specifiers:
   '@faker-js/faker': 7.6.0
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@sveltejs/adapter-vercel': 2.1.1
+  '@sveltejs/adapter-vercel': 2.2.0
   '@sveltejs/kit': 1.8.7
   '@tailwindcss/forms': 0.5.3
   '@typescript-eslint/eslint-plugin': 5.54.0
@@ -32,7 +32,7 @@ devDependencies:
   '@faker-js/faker': 7.6.0
   '@fontsource/lato': 4.5.10
   '@lukeed/uuid': 2.0.0
-  '@sveltejs/adapter-vercel': 2.1.1_@sveltejs+kit@1.8.7
+  '@sveltejs/adapter-vercel': 2.2.0_@sveltejs+kit@1.8.7
   '@sveltejs/kit': 1.8.7_svelte@3.55.1+vite@4.1.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
   '@typescript-eslint/eslint-plugin': 5.54.0_6mj2wypvdnknez7kws2nfdgupi
@@ -378,8 +378,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-vercel/2.1.1_@sveltejs+kit@1.8.7:
-    resolution: {integrity: sha512-itrsBExc3J208+X1cTFJUlkOJaMl6ZfDVZRMeka2unWMZ7DNXXLg4mq1REC/nvhl5g2he7HSZvqGh6n7z/kuQQ==}
+  /@sveltejs/adapter-vercel/2.2.0_@sveltejs+kit@1.8.7:
+    resolution: {integrity: sha512-asyVXHOXnBJYr1/FCjEGJyJFvqY4X3jpLwi8oAqXokGy0ac7QGylxKTKGoIv4UjCLgPIsS/wIEpouPeGzkt1ow==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
