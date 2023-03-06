@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "5.54.0",
     "autoprefixer": "10.4.13",
     "eslint": "8.35.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.7.0",
     "eslint-plugin-svelte3": "4.0.0",
     "mongoose": "7.0.0",
     "postcss-load-config": "4.0.1",
