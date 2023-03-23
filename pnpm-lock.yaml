@@ -13,7 +13,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0
   eslint-plugin-svelte3: 4.0.0
-  mongoose: 7.0.2
+  mongoose: 7.0.3
   postcss: 8.4.21
   postcss-load-config: 4.0.1
   prettier: 2.8.6
@@ -41,7 +41,7 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0_eslint@8.36.0
   eslint-plugin-svelte3: 4.0.0_wzem237sbvnwe7n34ytc5phasy
-  mongoose: 7.0.2
+  mongoose: 7.0.3
   postcss: 8.4.21
   postcss-load-config: 4.0.1_postcss@8.4.21
   prettier: 2.8.6
@@ -1863,8 +1863,8 @@ packages:
       saslprep: 1.0.3
     dev: true
 
-  /mongoose/7.0.2:
-    resolution: {integrity: sha512-whX+5lAOLOs6VXRr9w+6m5qb8m/IXWLLb9+0/HRUh2TiIYtTt7UvajK92zW6wllCjBkrrnz/MDIOTCWMbs8K4g==}
+  /mongoose/7.0.3:
+    resolution: {integrity: sha512-3n8vc1/mssuxKa6vfghSocp3MeiCFYzhX36Ok+PsDNNYzHC9tw3rNkAMLemIwZ2jgXqkZ7CfKOxkzjp/d/SWfg==}
     engines: {node: '>=14.0.0'}
     dependencies:
       bson: 5.0.1
