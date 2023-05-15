@@ -11,7 +11,7 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
-    "@faker-js/faker": "8.0.0",
+    "@faker-js/faker": "8.0.1",
     "@fontsource/lato": "4.5.10",
     "@lukeed/uuid": "2.0.1",
     "@sveltejs/adapter-vercel": "2.4.3",
