@@ -36,7 +36,7 @@
     "tslib": "2.5.2",
     "typescript": "5.0.4",
     "vite": "4.3.8",
-    "yup": "1.1.1"
+    "yup": "1.2.0"
   },
   "type": "module"
 }
