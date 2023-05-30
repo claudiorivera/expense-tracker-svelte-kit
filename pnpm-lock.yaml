@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 devDependencies:
   '@faker-js/faker':
@@ -38,8 +42,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.41.0)(svelte@3.59.1)
   mongoose:
-    specifier: 7.2.1
-    version: 7.2.1
+    specifier: 7.2.2
+    version: 7.2.2
   postcss:
     specifier: 8.4.24
     version: 8.4.24
@@ -1678,8 +1682,8 @@ packages:
       saslprep: 1.0.3
     dev: true
 
-  /mongoose@7.2.1:
-    resolution: {integrity: sha512-c2OOl+ch9NlmPeJw7UjSb2jHNjoOw1XXHyzwygIf4z1GmaBx1OYb8OYqHkYPivvEmfY/vUWZFCgePsDqZgFn2w==}
+  /mongoose@7.2.2:
+    resolution: {integrity: sha512-JPBMTF+oYfLGVFWbHSZ/H+f1GajNanGLYH6c/P0nE3bNJfwGhX573vieGR0kNlNhj3cZk8WCPrnVsTNeUmFUag==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.3.0
