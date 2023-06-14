@@ -42,8 +42,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.42.0)(svelte@3.59.1)
   mongoose:
-    specifier: 7.2.4
-    version: 7.2.4
+    specifier: 7.3.0
+    version: 7.3.0
   postcss:
     specifier: 8.4.24
     version: 8.4.24
@@ -1677,8 +1677,8 @@ packages:
       whatwg-url: 11.0.0
     dev: true
 
-  /mongodb@5.5.0:
-    resolution: {integrity: sha512-XgrkUgAAdfnZKQfk5AsYL8j7O99WHd4YXPxYxnh8dZxD+ekYWFRA3JktUsBnfg+455Smf75/+asoU/YLwNGoQQ==}
+  /mongodb@5.6.0:
+    resolution: {integrity: sha512-z8qVs9NfobHJm6uzK56XBZF8XwM9H294iRnB7wNjF0SnY93si5HPziIJn+qqvUR5QOff/4L0gCD6SShdR/GtVQ==}
     engines: {node: '>=14.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.201.0
@@ -1699,13 +1699,13 @@ packages:
       saslprep: 1.0.3
     dev: true
 
-  /mongoose@7.2.4:
-    resolution: {integrity: sha512-BWcgShV2WH1rspICiJKLPi7QssTebpGJ23Nyk7qG0TMEE/OEAlsQKEhI7VlrXg4ZnoOcHgG+N+upW9tj17TTQg==}
+  /mongoose@7.3.0:
+    resolution: {integrity: sha512-gvkV5qxmBkGohlk7VTeePMPM2OkQPeqVYZHvjoM4goOIK6G1eSfJMZwXV21asivXxlaz6OuP29TfGAKrKooDAg==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.3.0
       kareem: 2.5.1
-      mongodb: 5.5.0
+      mongodb: 5.6.0
       mpath: 0.9.0
       mquery: 5.0.0
       ms: 2.1.3
