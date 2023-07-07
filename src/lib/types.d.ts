@@ -3,6 +3,6 @@
  * inside `global.d.ts` and removing `export` keyword
  */
 export interface Transaction {
-  description: string;
-  amount: number;
+	description: string;
+	amount: number;
 }
