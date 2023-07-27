@@ -29,7 +29,7 @@
 		"mongoose": "7.4.1",
 		"postcss-load-config": "4.0.1",
 		"postcss": "8.4.27",
-		"prettier-plugin-svelte": "3.0.1",
+		"prettier-plugin-svelte": "3.0.2",
 		"prettier": "3.0.0",
 		"svelte-check": "3.4.6",
 		"svelte-forms-lib": "2.0.1",
