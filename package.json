@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@faker-js/faker": "8.0.2",
-		"@fontsource/lato": "5.0.5",
+		"@fontsource/lato": "5.0.6",
 		"@lukeed/uuid": "2.0.1",
 		"@sveltejs/adapter-vercel": "3.0.3",
 		"@sveltejs/kit": "1.22.4",
