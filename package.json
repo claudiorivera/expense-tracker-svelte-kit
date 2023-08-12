@@ -31,7 +31,7 @@
 		"postcss": "8.4.27",
 		"prettier-plugin-svelte": "3.0.3",
 		"prettier": "3.0.1",
-		"svelte-check": "3.4.6",
+		"svelte-check": "3.5.0",
 		"svelte-forms-lib": "2.0.1",
 		"svelte-preprocess": "5.0.4",
 		"svelte": "4.2.0",
