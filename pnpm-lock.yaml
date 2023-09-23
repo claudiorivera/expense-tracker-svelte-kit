@@ -81,8 +81,8 @@ devDependencies:
     specifier: 4.4.9
     version: 4.4.9
   yup:
-    specifier: 1.2.0
-    version: 1.2.0
+    specifier: 1.3.0
+    version: 1.3.0
 
 packages:
 
@@ -2722,8 +2722,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /yup@1.2.0:
-    resolution: {integrity: sha512-PPqYKSAXjpRCgLgLKVGPA33v5c/WgEx3wi6NFjIiegz90zSwyMpvTFp/uGcVnnbx6to28pgnzp/q8ih3QRjLMQ==}
+  /yup@1.3.0:
+    resolution: {integrity: sha512-e7sDRCv7/jmzHqTTnV+xoGIOYyBxAL5s9h+a3JdiJx15FrXjIWebal0KHXPEdJ1GjhcDLojnDiywXzkYXi/mSA==}
     dependencies:
       property-expr: 2.0.5
       tiny-case: 1.0.3
