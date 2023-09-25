@@ -26,7 +26,7 @@
 		"eslint": "8.50.0",
 		"eslint-config-prettier": "9.0.0",
 		"eslint-plugin-svelte3": "4.0.0",
-		"mongoose": "7.5.2",
+		"mongoose": "7.5.3",
 		"postcss-load-config": "4.0.1",
 		"postcss": "8.4.30",
 		"prettier-plugin-svelte": "3.0.3",
