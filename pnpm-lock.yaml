@@ -9,8 +9,8 @@ devDependencies:
     specifier: 8.1.0
     version: 8.1.0
   '@fontsource/lato':
-    specifier: 5.0.14
-    version: 5.0.14
+    specifier: 5.0.15
+    version: 5.0.15
   '@lukeed/uuid':
     specifier: 2.0.1
     version: 2.0.1
@@ -344,8 +344,8 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
     dev: true
 
-  /@fontsource/lato@5.0.14:
-    resolution: {integrity: sha512-LVygmrEjoxlBPBcp5QMaH5fZ+aAIMR2h2Q3K4W2DETh1kphEjn/bBwiZEhg3ZFPIMu5A34lOVZygKq4HOVY8iQ==}
+  /@fontsource/lato@5.0.15:
+    resolution: {integrity: sha512-9aDcNLhisbUHLa4sisBtN7qh7Bzs4oCMO5q3xypc7WNY6ZOtGwf0HF8u/DuYhVMmwo6C/QvlpwUgjYJO8PPL1g==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.11:
