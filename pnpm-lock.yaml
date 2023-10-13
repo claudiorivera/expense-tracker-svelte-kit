@@ -42,8 +42,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.51.0)(svelte@4.2.1)
   mongoose:
-    specifier: 7.6.0
-    version: 7.6.0
+    specifier: 7.6.2
+    version: 7.6.2
   postcss:
     specifier: 8.4.31
     version: 8.4.31
@@ -901,11 +901,6 @@ packages:
       electron-to-chromium: 1.4.490
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
-    dev: true
-
-  /bson@5.4.0:
-    resolution: {integrity: sha512-WRZ5SQI5GfUuKnPTNmAYPiKIof3ORXAF4IRU5UcgmivNIon01rWQlw5RUH954dpu8yGL8T59YShVddIPaU/gFA==}
-    engines: {node: '>=14.20.1'}
     dev: true
 
   /bson@5.5.0:
@@ -1777,11 +1772,11 @@ packages:
       '@mongodb-js/saslprep': 1.1.0
     dev: true
 
-  /mongoose@7.6.0:
-    resolution: {integrity: sha512-ztQ12rm0BQN5i7LB6xhWX4l9a9w2aa3jEwa/mM2vAutYJRyAwOzcusvKJBULMzFHyUDBOVW15grisexypgMIWA==}
+  /mongoose@7.6.2:
+    resolution: {integrity: sha512-OVx6RWbfNOzBbfTvXoOkgZmaizdXDU/B/KbBjietXQoInSg/OSULjOavXJzL51XWFkbefqkOvbeE07DfvW6FkQ==}
     engines: {node: '>=14.20.1'}
     dependencies:
-      bson: 5.4.0
+      bson: 5.5.0
       kareem: 2.5.1
       mongodb: 5.9.0
       mpath: 0.9.0
