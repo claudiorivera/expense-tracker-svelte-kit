@@ -42,8 +42,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.51.0)(svelte@4.2.1)
   mongoose:
-    specifier: 7.6.2
-    version: 7.6.2
+    specifier: 7.6.3
+    version: 7.6.3
   postcss:
     specifier: 8.4.31
     version: 8.4.31
@@ -1772,8 +1772,8 @@ packages:
       '@mongodb-js/saslprep': 1.1.0
     dev: true
 
-  /mongoose@7.6.2:
-    resolution: {integrity: sha512-OVx6RWbfNOzBbfTvXoOkgZmaizdXDU/B/KbBjietXQoInSg/OSULjOavXJzL51XWFkbefqkOvbeE07DfvW6FkQ==}
+  /mongoose@7.6.3:
+    resolution: {integrity: sha512-moYP2qWCOdWRDeBxqB/zYwQmQnTBsF5DoolX5uPyI218BkiA1ujGY27P0NTd4oWIX+LLkZPw0LDzlc/7oh1plg==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.5.0
