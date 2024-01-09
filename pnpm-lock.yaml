@@ -42,8 +42,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.56.0)(svelte@4.2.8)
   mongoose:
-    specifier: 8.0.3
-    version: 8.0.3
+    specifier: 8.0.4
+    version: 8.0.4
   postcss:
     specifier: 8.4.33
     version: 8.4.33
@@ -1881,8 +1881,8 @@ packages:
       mongodb-connection-string-url: 2.6.0
     dev: true
 
-  /mongoose@8.0.3:
-    resolution: {integrity: sha512-LJRT0yP4TW14HT4r2RkxqyvoTylMSzWpl5QOeVHTnRggCLQSpkoBdgbUtORFq/mSL2o9cLCPJz+6uzFj25qbHw==}
+  /mongoose@8.0.4:
+    resolution: {integrity: sha512-wN9qvdevX3+922VnLT7CpaZRT3jmVCBOK2QMHMGeScQxDRnFMPpkuI9StEPpZo/3x8t+kbzH7F8RMPsyNwyM4w==}
     engines: {node: '>=16.20.1'}
     dependencies:
       bson: 6.2.0
