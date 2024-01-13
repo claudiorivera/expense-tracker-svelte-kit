@@ -14,7 +14,6 @@
 	{form}
 	schema={addTransactionFormSchema}
 	let:config
-	debug
 	options={{
 		validationMethod: "submit-only",
 		resetForm: true,
