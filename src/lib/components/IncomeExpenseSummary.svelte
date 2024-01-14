@@ -17,7 +17,7 @@
 		}, 0);
 </script>
 
-<div class="shadow rounded m-1 p-1 bg-white">
+<div class="m-1 rounded bg-white p-1 shadow">
 	<div class="flex justify-between">
 		<div class="flex-grow border-r text-center">
 			<div>INCOME</div>
