@@ -1,7 +1,7 @@
 <script lang="ts">
-  import "../app.postcss";
+	import "../app.pcss";
 </script>
 
-<main class="font-thin cursor-default antialiased bg-slate-50">
-  <slot />
+<main class="cursor-default bg-slate-50 font-thin antialiased">
+	<slot />
 </main>

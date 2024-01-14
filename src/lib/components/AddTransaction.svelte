@@ -19,10 +19,10 @@
 		resetForm: true,
 		autoFocusOnError: true,
 	}}
-	class="shadow rounded bg-white flex flex-col items-center gap-4 p-4"
+	class="flex flex-col items-center gap-4 rounded bg-white p-4 shadow"
 >
 	<Form.Field {config} name="transactionType">
-		<Form.Item class="self-end w-1/2">
+		<Form.Item class="w-1/2 self-end">
 			<Form.Select
 				selected={{
 					value: TransactionType.EXPENSE,
@@ -62,7 +62,7 @@
 		</Form.Item>
 	</Form.Field>
 
-	<Form.Button class="bg-indigo-500 text-white font-semibold w-1/2"
+	<Form.Button class="w-1/2 bg-indigo-500 font-semibold text-white"
 		>Submit</Form.Button
 	>
 </Form.Root>

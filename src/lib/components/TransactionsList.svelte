@@ -17,9 +17,9 @@
 	};
 </script>
 
-<ul class="shadow rounded m-1 p-1 bg-white">
+<ul class="m-1 rounded bg-white p-1 shadow">
 	{#each transactions as transaction (transaction._id.toString())}
-		<li class="p-3 hover:font-bold border-b last:border-none" transition:fade>
+		<li class="border-b p-3 last:border-none hover:font-bold" transition:fade>
 			<div class="flex items-center">
 				<button
 					class="mr-1"
