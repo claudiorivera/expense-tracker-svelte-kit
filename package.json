@@ -26,7 +26,7 @@
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
 		"formsnap": "^0.4.2",
-		"lucide-svelte": "^0.312.0",
+		"lucide-svelte": "^0.314.0",
 		"mongoose": "8.1.0",
 		"postcss": "8.4.33",
 		"postcss-load-config": "5.0.2",
