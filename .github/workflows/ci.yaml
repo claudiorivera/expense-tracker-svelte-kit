@@ -22,6 +22,6 @@ jobs:
       - name: 📦 Install Dependencies
         run: bun install
       - name: 🔄 SvelteKit Sync
-        run: svelte-kit sync
+        run: bun sync
       - name: 🏷️ Check Types
         run: bun typecheck
