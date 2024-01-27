@@ -1,5 +1,5 @@
-import { TransactionModel } from "$lib/models/Transaction";
-import { dbConnect, dbDisconnect } from "$lib/mongooseConnect";
+import { TransactionModel } from "$lib/models/transaction";
+import { dbConnect, dbDisconnect } from "$lib/mongoose-connect";
 import type { Transaction } from "$lib/types";
 import { faker } from "@faker-js/faker";
 import { json } from "@sveltejs/kit";

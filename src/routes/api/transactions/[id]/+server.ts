@@ -1,6 +1,6 @@
-import { TransactionModel } from "$lib/models/Transaction";
-import { dbConnect } from "$lib/mongooseConnect";
-import type { RequestEvent } from "@sveltejs/kit/types/internal";
+import { TransactionModel } from "$lib/models/transaction";
+import { dbConnect } from "$lib/mongoose-connect";
+import type { RequestEvent } from "@sveltejs/kit";
 
 export const DELETE = async ({ params }: RequestEvent) => {
 	await dbConnect();

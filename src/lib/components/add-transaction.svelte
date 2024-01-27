@@ -3,7 +3,7 @@
 		TransactionType,
 		addTransactionFormSchema,
 		type AddTransactionFormSchema,
-	} from "$lib/addTransactionFormSchema";
+	} from "$lib/add-transaction-form-schema";
 	import * as Form from "$lib/components/ui/form";
 	import type { SuperValidated } from "sveltekit-superforms";
 	export let form: SuperValidated<AddTransactionFormSchema>;
