@@ -4,11 +4,11 @@ This is my version of the [Expense Tracker from Traversy Media's YouTube course]
 
 ## Prerequisites
 
-- [pnpm](https://pnpm.io)
+- [bun](https://bun.sh)
 
 ## Install
 
-`pnpm i`
+`bun i`
 
 ## Config
 
@@ -16,4 +16,4 @@ Inject `MONGODB_URI` into your environment (ie. with `direnv` or `vercel pull` o
 
 ## Develop
 
-`pnpm dev`
+`bun dev`

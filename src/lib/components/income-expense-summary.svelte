@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatCurrency } from "$lib/formatDollarAmount";
+	import { formatCurrency } from "$lib/format-currency";
 	import type { Transaction } from "$lib/types";
 
 	export let transactions: Transaction[];

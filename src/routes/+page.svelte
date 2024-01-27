@@ -1,9 +1,9 @@
 <script lang="ts">
-	import AddTransaction from "$lib/components/AddTransaction.svelte";
-	import Heading from "$lib/components/Heading.svelte";
-	import IncomeExpenseSummary from "$lib/components/IncomeExpenseSummary.svelte";
-	import TransactionsList from "$lib/components/TransactionsList.svelte";
-	import { formatCurrency } from "$lib/formatDollarAmount";
+	import AddTransaction from "$lib/components/add-transaction.svelte";
+	import Heading from "$lib/components/heading.svelte";
+	import IncomeExpenseSummary from "$lib/components/income-expense-summary.svelte";
+	import TransactionsList from "$lib/components/transactions-list.svelte";
+	import { formatCurrency } from "$lib/format-currency";
 	import type { Transaction } from "$lib/types";
 	import type { HydratedDocument } from "mongoose";
 	import type { PageData } from "./$types";

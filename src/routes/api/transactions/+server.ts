@@ -1,9 +1,9 @@
-import { TransactionModel } from "$lib/models/Transaction";
-import { dbConnect } from "$lib/mongooseConnect";
+import { TransactionModel } from "$lib/models/transaction";
+import { dbConnect } from "$lib/mongoose-connect";
 import type { Transaction } from "$lib/types";
 import { json } from "@sveltejs/kit";
-import type { RequestHandler } from "./$types";
 import type { HydratedDocument } from "mongoose";
+import type { RequestHandler } from "./$types";
 
 export const GET: RequestHandler = async () => {
 	await dbConnect();

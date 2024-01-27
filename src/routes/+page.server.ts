@@ -1,8 +1,8 @@
-import { addTransactionFormSchema } from "$lib/addTransactionFormSchema";
-import { TransactionModel } from "$lib/models/Transaction";
-import { dbConnect } from "$lib/mongooseConnect";
+import { addTransactionFormSchema } from "$lib/add-transaction-form-schema";
+import { TransactionModel } from "$lib/models/transaction";
+import { dbConnect } from "$lib/mongoose-connect";
 import type { Transaction } from "$lib/types";
-import { error, fail, type Actions, type Load } from "@sveltejs/kit";
+import { type Actions, type Load, error, fail } from "@sveltejs/kit";
 import type { HydratedDocument } from "mongoose";
 import { superValidate } from "sveltekit-superforms/server";
 
