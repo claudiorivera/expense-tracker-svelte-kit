@@ -6,6 +6,8 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    env:
+      MONGODB_URI: mongodb://localhost
     steps:
       - name: 🛒 Checkout
         uses: actions/checkout@v4
@@ -19,7 +21,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
       - name: 📦 Install Dependencies
         run: bun install
+      - name: 🔄 SvelteKit Sync
+        run: svelte-kit sync
       - name: 🏷️ Check Types
         run: bun typecheck
-        env:
-          MONGODB_URI: mongodb://localhost
