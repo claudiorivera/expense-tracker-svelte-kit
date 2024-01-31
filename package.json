@@ -24,7 +24,7 @@
     "bun-types": "1.0.25",
     "clsx": "^2.1.0",
     "formsnap": "^0.4.2",
-    "lucide-svelte": "^0.319.0",
+    "lucide-svelte": "^0.320.0",
     "mongoose": "8.1.1",
     "postcss": "8.4.33",
     "postcss-load-config": "5.0.2",
