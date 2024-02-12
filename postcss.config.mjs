@@ -1,7 +1,7 @@
-const tailwindcss = require("tailwindcss");
-const autoprefixer = require("autoprefixer");
+import autoprefixer from "autoprefixer";
+import tailwindcss from "tailwindcss";
 
-const config = {
+export default {
 	plugins: [
 		//Some plugins, like tailwindcss/nesting, need to run before Tailwind,
 		tailwindcss(),
@@ -9,5 +9,3 @@ const config = {
 		autoprefixer,
 	],
 };
-
-module.exports = config;
