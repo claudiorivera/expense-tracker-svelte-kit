@@ -4,7 +4,8 @@ import { dbConnect } from "$lib/mongoose-connect";
 import type { Transaction } from "$lib/types";
 import { type Actions, type Load, error, fail } from "@sveltejs/kit";
 import type { HydratedDocument } from "mongoose";
-import { superValidate } from "sveltekit-superforms/server";
+import { superValidate } from "sveltekit-superforms";
+import { zod } from "sveltekit-superforms/adapters";
 
 export const load: Load = async ({ fetch }) => {
 	const url = "/api/transactions";
@@ -13,7 +14,7 @@ export const load: Load = async ({ fetch }) => {
 	if (res.ok) {
 		return {
 			transactions: await res.json(),
-			form: await superValidate(addTransactionFormSchema),
+			form: await superValidate(zod(addTransactionFormSchema)),
 		};
 	}
 
@@ -22,7 +23,7 @@ export const load: Load = async ({ fetch }) => {
 
 export const actions: Actions = {
 	default: async (event) => {
-		const form = await superValidate(event, addTransactionFormSchema);
+		const form = await superValidate(event, zod(addTransactionFormSchema));
 
 		if (!form.valid) {
 			return fail(400, {
