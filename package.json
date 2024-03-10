@@ -24,7 +24,7 @@
 		"bits-ui": "^0.19.0",
 		"clsx": "^2.1.0",
 		"formsnap": "^0.5.1",
-		"lucide-svelte": "^0.350.0",
+		"lucide-svelte": "^0.354.0",
 		"mongoose": "8.2.1",
 		"postcss": "8.4.35",
 		"postcss-load-config": "5.0.3",
