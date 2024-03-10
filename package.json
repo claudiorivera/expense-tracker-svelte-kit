@@ -16,7 +16,7 @@
 		"@faker-js/faker": "8.4.1",
 		"@fontsource/lato": "5.0.19",
 		"@sveltejs/adapter-vercel": "5.1.0",
-		"@sveltejs/kit": "2.5.2",
+		"@sveltejs/kit": "2.5.3",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/bun": "1.0.8",
 		"@types/node": "^20.11.7",
