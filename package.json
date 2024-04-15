@@ -12,7 +12,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.6.4",
+		"@biomejs/biome": "1.7.0",
 		"@faker-js/faker": "8.4.1",
 		"@fontsource/lato": "5.0.20",
 		"@sveltejs/adapter-vercel": "5.3.0",
