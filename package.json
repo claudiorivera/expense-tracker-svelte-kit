@@ -8,7 +8,7 @@
 		"sync": "svelte-kit sync",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"check:fix": "bunx @biomejs/biome check --apply src",
+		"check:fix": "pnpm biome check --apply src",
 		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {
