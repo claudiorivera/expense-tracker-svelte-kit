@@ -9,6 +9,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"check:fix": "pnpm biome check --apply src",
+		"check:nofix": "pnpm biome check src",
 		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {

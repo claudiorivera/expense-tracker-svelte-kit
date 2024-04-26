@@ -1,37 +1,37 @@
 <script lang="ts">
-  import {
-    TransactionType,
-    addTransactionFormSchema,
-    type AddTransactionFormSchema,
-  } from "$lib/add-transaction-form-schema";
-  import * as Form from "$lib/components/ui/form";
-  import * as Select from "$lib/components/ui/select";
-  import { Input } from "$lib/components/ui/input";
-  import {
-    type SuperValidated,
-    type Infer,
-    superForm,
-  } from "sveltekit-superforms";
-  import { zodClient } from "sveltekit-superforms/adapters";
+import {
+	type AddTransactionFormSchema,
+	TransactionType,
+	addTransactionFormSchema,
+} from "$lib/add-transaction-form-schema";
+import * as Form from "$lib/components/ui/form";
+import { Input } from "$lib/components/ui/input";
+import * as Select from "$lib/components/ui/select";
+import {
+	type Infer,
+	type SuperValidated,
+	superForm,
+} from "sveltekit-superforms";
+import { zodClient } from "sveltekit-superforms/adapters";
 
-  export let data: SuperValidated<Infer<AddTransactionFormSchema>>;
+export let data: SuperValidated<Infer<AddTransactionFormSchema>>;
 
-  const form = superForm(data, {
-    validators: zodClient(addTransactionFormSchema),
-    autoFocusOnError: true,
-  });
+const form = superForm(data, {
+	validators: zodClient(addTransactionFormSchema),
+	autoFocusOnError: true,
+});
 
-  const { form: formData, enhance } = form;
+const { form: formData, enhance } = form;
 
-  $: selectedTransactionType = $formData.transactionType
-    ? {
-        label:
-          $formData.transactionType === TransactionType.EXPENSE
-            ? "Expense"
-            : "Income",
-        value: $formData.transactionType,
-      }
-    : undefined;
+$: selectedTransactionType = $formData.transactionType
+	? {
+			label:
+				$formData.transactionType === TransactionType.EXPENSE
+					? "Expense"
+					: "Income",
+			value: $formData.transactionType,
+		}
+	: undefined;
 </script>
 
 <form

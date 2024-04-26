@@ -1,20 +1,20 @@
 <script lang="ts">
-	import { formatCurrency } from "$lib/format-currency";
-	import type { HydratedDocument } from "mongoose";
-	import { fade } from "svelte/transition";
+import { formatCurrency } from "$lib/format-currency";
+import type { HydratedDocument } from "mongoose";
+import { fade } from "svelte/transition";
 
-	import type { Transaction } from "$lib/types";
-	import DeleteIcon from "./delete-icon.svelte";
+import type { Transaction } from "$lib/types";
+import DeleteIcon from "./delete-icon.svelte";
 
-	export let transactions: HydratedDocument<Transaction>[];
-	export let fetchTransactions: () => Promise<void>;
+export let transactions: HydratedDocument<Transaction>[];
+export let fetchTransactions: () => Promise<void>;
 
-	const handleDelete = async (_id: string) => {
-		await fetch(`/api/transactions/${_id}`, {
-			method: "DELETE",
-		});
-		fetchTransactions();
-	};
+const handleDelete = async (_id: string) => {
+	await fetch(`/api/transactions/${_id}`, {
+		method: "DELETE",
+	});
+	fetchTransactions();
+};
 </script>
 
 <ul class="m-1 rounded bg-white p-1 shadow">
