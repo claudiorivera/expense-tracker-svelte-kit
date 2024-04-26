@@ -85,7 +85,7 @@ importers:
         version: 5.2.10(@types/node@20.11.25)
       zod:
         specifier: ^3.22.4
-        version: 3.22.4
+        version: 3.23.4
 
 packages:
 
@@ -1802,8 +1802,8 @@ packages:
     peerDependencies:
       zod: ^3.22.4
 
-  zod@3.22.4:
-    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+  zod@3.23.4:
+    resolution: {integrity: sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==}
 
 snapshots:
 
@@ -3210,8 +3210,8 @@ snapshots:
       superstruct: 1.0.3
       valibot: 0.29.0
       yup: 1.4.0
-      zod: 3.22.4
-      zod-to-json-schema: 3.22.4(zod@3.22.4)
+      zod: 3.23.4
+      zod-to-json-schema: 3.22.4(zod@3.23.4)
     transitivePeerDependencies:
       - '@types/json-schema'
       - esbuild
@@ -3386,9 +3386,9 @@ snapshots:
       type-fest: 2.19.0
     optional: true
 
-  zod-to-json-schema@3.22.4(zod@3.22.4):
+  zod-to-json-schema@3.22.4(zod@3.23.4):
     dependencies:
-      zod: 3.22.4
+      zod: 3.23.4
     optional: true
 
-  zod@3.22.4: {}
+  zod@3.23.4: {}
