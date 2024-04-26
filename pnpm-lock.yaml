@@ -70,7 +70,7 @@ importers:
         version: 2.2.1
       tailwind-variants:
         specifier: ^0.2.0
-        version: 0.2.0(tailwindcss@3.4.3)
+        version: 0.2.1(tailwindcss@3.4.3)
       tailwindcss:
         specifier: 3.4.3
         version: 3.4.3
@@ -1630,8 +1630,8 @@ packages:
   tailwind-merge@2.2.1:
     resolution: {integrity: sha512-o+2GTLkthfa5YUt4JxPfzMIpQzZ3adD1vLVkvKE1Twl9UAhGsEbIZhHHZVRttyW177S8PDJI3bTQNaebyofK3Q==}
 
-  tailwind-variants@0.2.0:
-    resolution: {integrity: sha512-EuW5Sic7c0tzp+p5rJwAgb7398Jb0hi4zkyCstOoZPW0DWwr+EWkNtnZYEo5CjgE1tazHUzyt4oIhss64UXRVA==}
+  tailwind-variants@0.2.1:
+    resolution: {integrity: sha512-2xmhAf4UIc3PijOUcJPA1LP4AbxhpcHuHM2C26xM0k81r0maAO6uoUSHl3APmvHZcY5cZCY/bYuJdfFa4eGoaw==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
@@ -3223,7 +3223,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.24.0
 
-  tailwind-variants@0.2.0(tailwindcss@3.4.3):
+  tailwind-variants@0.2.1(tailwindcss@3.4.3):
     dependencies:
       tailwind-merge: 2.2.1
       tailwindcss: 3.4.3
