@@ -45,8 +45,8 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1(svelte@4.2.15)(sveltekit-superforms@2.12.6(@sveltejs/kit@2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.12.8)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.12.8)))(@types/json-schema@7.0.15)(esbuild-runner@2.2.2(esbuild@0.20.2))(esbuild@0.20.2)(svelte@4.2.15))
       lucide-svelte:
-        specifier: ^0.376.0
-        version: 0.376.1(svelte@4.2.15)
+        specifier: ^0.377.0
+        version: 0.377.0(svelte@4.2.15)
       mongoose:
         specifier: 8.3.3
         version: 8.3.3
@@ -1136,8 +1136,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  lucide-svelte@0.376.1:
-    resolution: {integrity: sha512-+GkCTB8WFz+Xz+6SO00zwob1OjpT2YrWHh5Dl1QYkT78SrDHjYo6QJuvqX2zo8Z7Fft00hUEJYFMIf8o38PE8Q==}
+  lucide-svelte@0.377.0:
+    resolution: {integrity: sha512-RUsf2d/tNQuDAgPpBfkhgXfho0VCw5dA7O2ZT/wpl0JVMJelGlASfx5IMZRU8jYOqWSp9UlUXWa4MvLp1GzuPQ==}
     peerDependencies:
       svelte: ^3 || ^4 || ^5.0.0-next.42
 
@@ -2764,7 +2764,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-svelte@0.376.1(svelte@4.2.15):
+  lucide-svelte@0.377.0(svelte@4.2.15):
     dependencies:
       svelte: 4.2.15
 
