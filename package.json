@@ -24,7 +24,7 @@
 		"autoprefixer": "10.4.19",
 		"bits-ui": "^0.21.0",
 		"clsx": "^2.1.0",
-		"formsnap": "^0.5.1",
+		"formsnap": "^1.0.0",
 		"lucide-svelte": "^0.378.0",
 		"mongoose": "8.3.3",
 		"postcss": "8.4.38",
