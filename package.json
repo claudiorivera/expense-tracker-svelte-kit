@@ -16,7 +16,7 @@
 		"@biomejs/biome": "1.8.1",
 		"@faker-js/faker": "8.4.1",
 		"@fontsource/lato": "5.0.21",
-		"@sveltejs/adapter-vercel": "5.3.1",
+		"@sveltejs/adapter-vercel": "5.3.2",
 		"@sveltejs/kit": "2.5.10",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/bun": "1.1.4",
