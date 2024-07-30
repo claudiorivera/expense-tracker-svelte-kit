@@ -48,8 +48,8 @@ importers:
         specifier: ^0.417.0
         version: 0.417.0(svelte@4.2.18)
       mongoose:
-        specifier: 8.5.1
-        version: 8.5.1
+        specifier: 8.5.2
+        version: 8.5.2
       postcss:
         specifier: 8.4.40
         version: 8.4.40
@@ -1241,8 +1241,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.5.1:
-    resolution: {integrity: sha512-OhVcwVl91A1G6+XpjDcpkGP7l7ikZkxa0DylX7NT/lcEqAjggzSdqDxb48A+xsDxqNAr0ntSJ1yiE3+KJTOd5Q==}
+  mongoose@8.5.2:
+    resolution: {integrity: sha512-GZB4rHMdYfGatV+23IpCrqFbyCOjCNOHXgWbirr92KRwTEncBrtW3kgU9vmpKjsGf7nMmnAy06SwWUv1vhDkSg==}
     engines: {node: '>=16.20.1'}
 
   mpath@0.9.0:
@@ -2849,7 +2849,7 @@ snapshots:
       bson: 6.7.0
       mongodb-connection-string-url: 3.0.0
 
-  mongoose@8.5.1:
+  mongoose@8.5.2:
     dependencies:
       bson: 6.7.0
       kareem: 2.6.3
