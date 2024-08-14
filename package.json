@@ -26,7 +26,7 @@
 		"clsx": "^2.1.0",
 		"formsnap": "^1.0.0",
 		"lucide-svelte": "^0.427.0",
-		"mongoose": "8.5.2",
+		"mongoose": "8.5.3",
 		"postcss": "8.4.41",
 		"postcss-load-config": "6.0.1",
 		"svelte": "4.2.18",
