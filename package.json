@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.0",
 		"@faker-js/faker": "8.4.1",
-		"@fontsource/lato": "5.0.23",
+		"@fontsource/lato": "5.1.0",
 		"@sveltejs/adapter-vercel": "5.4.3",
 		"@sveltejs/kit": "2.5.26",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
