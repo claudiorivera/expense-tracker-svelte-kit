@@ -37,7 +37,7 @@ importers:
         version: 10.4.20(postcss@8.4.47)
       bits-ui:
         specifier: ^0.21.0
-        version: 0.21.15(svelte@4.2.19)
+        version: 0.21.16(svelte@4.2.19)
       clsx:
         specifier: ^2.1.0
         version: 2.1.1
@@ -471,8 +471,8 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
-  '@internationalized/date@3.5.5':
-    resolution: {integrity: sha512-H+CfYvOZ0LTJeeLOqm19E3uj/4YjrmOFtBufDHPfvtI80hFAMqtrp7oCACpe4Cil5l8S0Qu/9dYfZc/5lY8WQQ==}
+  '@internationalized/date@3.5.6':
+    resolution: {integrity: sha512-jLxQjefH9VI5P9UQuqB6qNKnvFt1Ky1TPIzHGsIlCi7sZZoMR8SdYbBGRvM0y+Jtb+ez4ieBzmiAUcpmPYpyOw==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -801,8 +801,8 @@ packages:
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
-  bits-ui@0.21.15:
-    resolution: {integrity: sha512-+m5WSpJnFdCcNdXSTIVC1WYBozipO03qRh03GFWgrdxoHiolCfwW71EYG4LPCWYPG6KcTZV0Cj6iHSiZ7cdKdg==}
+  bits-ui@0.21.16:
+    resolution: {integrity: sha512-XFZ7/bK7j/K+5iktxX/ZpmoFHjYjpPzP5EOO/4bWiaFg5TG1iMcfjDhlBTQnJxD6BoVoHuqeZPHZvaTgF4Iv3Q==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0-next.118
 
@@ -2033,7 +2033,7 @@ snapshots:
       '@hapi/hoek': 9.3.0
     optional: true
 
-  '@internationalized/date@3.5.5':
+  '@internationalized/date@3.5.6':
     dependencies:
       '@swc/helpers': 0.5.13
 
@@ -2082,7 +2082,7 @@ snapshots:
     dependencies:
       '@floating-ui/core': 1.6.8
       '@floating-ui/dom': 1.6.11
-      '@internationalized/date': 3.5.5
+      '@internationalized/date': 3.5.6
       dequal: 2.0.3
       focus-trap: 7.6.0
       nanoid: 5.0.7
@@ -2389,9 +2389,9 @@ snapshots:
     dependencies:
       file-uri-to-path: 1.0.0
 
-  bits-ui@0.21.15(svelte@4.2.19):
+  bits-ui@0.21.16(svelte@4.2.19):
     dependencies:
-      '@internationalized/date': 3.5.5
+      '@internationalized/date': 3.5.6
       '@melt-ui/svelte': 0.76.2(svelte@4.2.19)
       nanoid: 5.0.7
       svelte: 4.2.19
