@@ -20,7 +20,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		return {
 			description: isExpense ? faker.commerce.product() : "Paycheck",
 			amount: Number(
-				faker.finance.amount(isExpense ? -500 : 500, isExpense ? -1 : 500),
+				faker.finance.amount({
+					min: isExpense ? -500 : 500,
+					max: isExpense ? -1 : 500,
+				}),
 			),
 		};
 	});
