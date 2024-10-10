@@ -10,11 +10,11 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"check:fix": "pnpm biome check --apply src",
 		"check:nofix": "pnpm biome check src",
-		"typecheck": "tsc --noEmit"
+		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.3",
-		"@faker-js/faker": "8.4.1",
+		"@faker-js/faker": "9.0.3",
 		"@fontsource/lato": "5.1.0",
 		"@sveltejs/adapter-vercel": "5.4.5",
 		"@sveltejs/kit": "2.6.4",
