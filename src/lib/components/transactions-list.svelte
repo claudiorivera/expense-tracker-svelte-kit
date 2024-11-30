@@ -6,8 +6,12 @@ import { fade } from "svelte/transition";
 import type { Transaction } from "$lib/types";
 import DeleteIcon from "./delete-icon.svelte";
 
-export let transactions: HydratedDocument<Transaction>[];
-export let fetchTransactions: () => Promise<void>;
+type Props = {
+	transactions: HydratedDocument<Transaction>[];
+	fetchTransactions: () => Promise<void>;
+};
+
+let { transactions, fetchTransactions }: Props = $props();
 
 const handleDelete = async (_id: string) => {
 	await fetch(`/api/transactions/${_id}`, {
@@ -24,7 +28,7 @@ const handleDelete = async (_id: string) => {
 				<button
 					class="mr-1"
 					type="button"
-					on:click={() => {
+					onclick={() => {
 						handleDelete(transaction._id.toString());
 					}}
 				>
