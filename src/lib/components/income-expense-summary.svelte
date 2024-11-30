@@ -2,19 +2,27 @@
 import { formatCurrency } from "$lib/format-currency";
 import type { Transaction } from "$lib/types";
 
-export let transactions: Transaction[];
+type Props = {
+	transactions: Transaction[];
+};
 
-$: totalIncome = transactions
-	.filter((transaction) => transaction.amount > 0)
-	.reduce((acc, curr) => {
-		return acc + curr.amount;
-	}, 0);
+let { transactions }: Props = $props();
 
-$: totalExpenses = transactions
-	.filter((transaction) => transaction.amount <= 0)
-	.reduce((acc, curr) => {
-		return acc + curr.amount;
-	}, 0);
+let totalIncome = $derived(
+	transactions
+		.filter((transaction) => transaction.amount > 0)
+		.reduce((acc, curr) => {
+			return acc + curr.amount;
+		}, 0),
+);
+
+let totalExpenses = $derived(
+	transactions
+		.filter((transaction) => transaction.amount <= 0)
+		.reduce((acc, curr) => {
+			return acc + curr.amount;
+		}, 0),
+);
 </script>
 
 <div class="m-1 rounded bg-white p-1 shadow">
