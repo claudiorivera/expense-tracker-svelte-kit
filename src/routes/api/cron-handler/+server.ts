@@ -30,10 +30,9 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	await TransactionModel.deleteMany();
 
-	for (const transaction of transactions) {
-		const newTransaction = new TransactionModel(transaction);
-		await newTransaction.save();
-	}
+	await Promise.all(
+		transactions.map((transaction) => new TransactionModel(transaction).save()),
+	);
 
 	await dbDisconnect();
 
