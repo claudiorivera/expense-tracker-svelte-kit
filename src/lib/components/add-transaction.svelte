@@ -26,91 +26,72 @@ const form = superForm(data, {
 });
 
 const { form: formData, enhance } = form;
-
-let selectedTransactionType = $derived(
-	$formData.transactionType
-		? {
-				label:
-					$formData.transactionType === TransactionType.EXPENSE
-						? "Expense"
-						: "Income",
-				value: $formData.transactionType,
-			}
-		: undefined,
-);
 </script>
 
 <form
   method="POST"
+  action="?/create"
   use:enhance
   class="flex flex-col items-end gap-4 rounded bg-white p-4 shadow"
 >
-  <Form.Field {form} name="transactionType" class="flex flex-col gap-1">
-    <Form.Control >
-      {#snippet children({ attrs })}
-            <div class="flex gap-2 items-center">
+  <Form.Field {form} name="transactionType">
+    <Form.Control>
+      {#snippet children({ props })}
+        <div class="flex gap-2 items-center">
           <Form.Label>Transaction Type</Form.Label>
           <Select.Root
-            selected={selectedTransactionType}
-            onSelectedChange={(v) => {
-              v && ($formData.transactionType = v.value);
-            }}
+            type="single"
+            bind:value={$formData.transactionType}
+            name={props.name}
           >
-            <Select.Trigger {...attrs} class="w-40">
-              <Select.Value placeholder="Select a Transaction Type" />
+            <Select.Trigger {...props} class="w-40">
+              {$formData.transactionType.charAt(0).toUpperCase() + $formData.transactionType.slice(1).toLowerCase()}
             </Select.Trigger>
             <Select.Content>
               <Select.Item value={TransactionType.EXPENSE} label="Expense" />
               <Select.Item value={TransactionType.INCOME} label="Income" />
             </Select.Content>
-            <Input
-              type="hidden"
-              name={attrs.name}
-              bind:value={$formData.transactionType}
-            />
           </Select.Root>
         </div>
-        <Form.FieldErrors />
-                {/snippet}
-        </Form.Control>
+      {/snippet}
+    </Form.Control>
   </Form.Field>
 
   <Form.Field {form} name="description" class="flex flex-col items-end gap-1">
-    <Form.Control >
-      {#snippet children({ attrs })}
-            <div class="flex gap-2 items-center">
+    <Form.Control>
+      {#snippet children({ props })}
+        <div class="flex gap-2 items-center">
           <Form.Label>Description</Form.Label>
           <Input
             class="w-40"
-            {...attrs}
-            autofocus
+            {...props}
             bind:value={$formData.description}
           />
         </div>
-        <Form.FieldErrors />
-                {/snippet}
-        </Form.Control>
+        {/snippet}
+      </Form.Control>
+    <Form.FieldErrors />
   </Form.Field>
 
   <Form.Field {form} name="amount" class="flex flex-col items-end gap-1">
-    <Form.Control >
-      {#snippet children({ attrs })}
-            <div class="flex gap-2 items-center">
+    <Form.Control>
+      {#snippet children({ props })}
+        <div class="flex gap-2 items-center">
           <Form.Label>Amount</Form.Label>
           <Input
             class="w-40"
-            {...attrs}
+            {...props}
             type="number"
             step={0.01}
             bind:value={$formData.amount}
           />
         </div>
-        <Form.FieldErrors />
-                {/snippet}
-        </Form.Control>
+        {/snippet}
+    </Form.Control>
+    <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Button class="w-1/2 bg-indigo-500 font-semibold text-white self-center"
-    >Submit</Form.Button
-  >
+  <Form.Button class="w-1/2 bg-indigo-500 font-semibold text-white self-center">
+    Submit
+  </Form.Button>
 </form>

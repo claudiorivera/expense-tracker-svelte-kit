@@ -3,7 +3,7 @@ import { formatCurrency } from "$lib/format-currency";
 import type { Transaction } from "$lib/types";
 
 type Props = {
-	transactions: Transaction[];
+	transactions: (Transaction & { _id: string })[];
 };
 
 let { transactions }: Props = $props();

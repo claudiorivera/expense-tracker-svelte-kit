@@ -1,28 +1,29 @@
 import { addTransactionFormSchema } from "$lib/add-transaction-form-schema";
 import { TransactionModel } from "$lib/models/transaction";
 import { dbConnect } from "$lib/mongoose-connect";
-import type { Transaction } from "$lib/types";
-import { type Actions, type Load, error, fail } from "@sveltejs/kit";
-import type { HydratedDocument } from "mongoose";
+import { type Actions, fail } from "@sveltejs/kit";
 import { superValidate } from "sveltekit-superforms";
 import { zod } from "sveltekit-superforms/adapters";
+import type { PageServerLoad } from "./$types";
 
-export const load: Load = async ({ fetch }) => {
-	const url = "/api/transactions";
-	const res = await fetch(url);
+export const load: PageServerLoad = async () => {
+	await dbConnect();
 
-	if (res.ok) {
-		return {
-			transactions: await res.json(),
-			form: await superValidate(zod(addTransactionFormSchema)),
-		};
-	}
+	const form = await superValidate(zod(addTransactionFormSchema));
 
-	throw error(500, `Could not load ${url}`);
+	const transactions = await TransactionModel.find().lean();
+
+	return {
+		transactions: transactions.map((transaction) => ({
+			...transaction,
+			_id: transaction._id.toString(),
+		})),
+		form,
+	};
 };
 
 export const actions: Actions = {
-	default: async (event) => {
+	create: async (event) => {
 		const form = await superValidate(event, zod(addTransactionFormSchema));
 
 		if (!form.valid) {
@@ -33,14 +34,21 @@ export const actions: Actions = {
 
 		await dbConnect();
 
-		const transaction: HydratedDocument<Transaction> = new TransactionModel(
-			form.data,
-		);
+		const transaction = new TransactionModel(form.data);
 
 		await transaction.save();
 
 		return {
 			form,
 		};
+	},
+	delete: async ({ request }) => {
+		const formData = await request.formData();
+
+		await dbConnect();
+
+		await TransactionModel.findOneAndDelete({
+			_id: formData.get("transactionId"),
+		});
 	},
 };

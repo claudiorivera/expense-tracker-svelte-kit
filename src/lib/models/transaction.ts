@@ -1,5 +1,5 @@
 import type { Transaction } from "$lib/types";
-import mongoose from "mongoose";
+import mongoose, { Model } from "mongoose";
 const { model, models, Schema } = mongoose;
 
 const TransactionSchema = new Schema<Transaction>({
@@ -13,5 +13,5 @@ const TransactionSchema = new Schema<Transaction>({
 	},
 });
 
-export const TransactionModel =
-	models.Transaction || model<Transaction>("Transaction", TransactionSchema);
+export const TransactionModel: Model<Transaction> =
+	models.Transaction ?? model<Transaction>("Transaction", TransactionSchema);
