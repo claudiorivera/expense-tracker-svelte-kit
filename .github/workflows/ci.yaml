@@ -24,7 +24,5 @@ jobs:
           cache: 'pnpm'
       - name: 📦 Install Dependencies
         run: pnpm install
-      - name: 🔄 SvelteKit Sync
-        run: pnpm sync
       - name: 🏷️ Check Types
-        run: pnpm check-types
+        run: pnpm check
