@@ -24,7 +24,7 @@
 		"@types/bun": "1.1.14",
 		"@types/node": "^22.10.1",
 		"autoprefixer": "10.4.20",
-		"bits-ui": "^0.21.16",
+		"bits-ui": "^0.22.0",
 		"clsx": "^2.1.1",
 		"formsnap": "^1.0.1",
 		"lucide-svelte": "^0.468.0",
