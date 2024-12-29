@@ -15,8 +15,8 @@ importers:
         specifier: 9.3.0
         version: 9.3.0
       '@fontsource/lato':
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.1.1
+        version: 5.1.1
       '@sveltejs/adapter-vercel':
         specifier: 5.5.2
         version: 5.5.2(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.0)(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.6)(yaml@2.4.2)))(rollup@4.27.4)
@@ -470,8 +470,8 @@ packages:
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
 
-  '@fontsource/lato@5.1.0':
-    resolution: {integrity: sha512-wYa/DeUS/WuaJoR/vY+v74W6gtOm98DgoRdSj4FuMXe0E0XYGAEVOgh+DxusJR3EglRZU6ZZDF7vZ881vV1KGA==}
+  '@fontsource/lato@5.1.1':
+    resolution: {integrity: sha512-sHnUKhfLcCxa2DTfXlpFntXJAFJ/s4kmmRFRf29Dp7dBcdFdlvWjCbXPZf1rhkzdE1vqTwBVlOGSX/kFgIOkhg==}
 
   '@gcornut/valibot-json-schema@0.31.0':
     resolution: {integrity: sha512-3xGptCurm23e7nuPQkdrE5rEs1FeTPHhAUsBuwwqG4/YeZLwJOoYZv+fmsppUEfo5y9lzUwNQrNqLS/q7HMc7g==}
@@ -1998,7 +1998,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.8': {}
 
-  '@fontsource/lato@5.1.0': {}
+  '@fontsource/lato@5.1.1': {}
 
   '@gcornut/valibot-json-schema@0.31.0':
     dependencies:
