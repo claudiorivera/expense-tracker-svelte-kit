@@ -21,7 +21,7 @@
 		"@sveltejs/adapter-vercel": "5.5.3",
 		"@sveltejs/kit": "2.16.1",
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
-		"@types/bun": "1.1.18",
+		"@types/bun": "1.2.0",
 		"@types/node": "^22.10.1",
 		"autoprefixer": "10.4.20",
 		"bits-ui": "^0.22.0",
