@@ -61,10 +61,10 @@ importers:
         version: 2.6.0
       tailwind-variants:
         specifier: 0.3.1
-        version: 0.3.1(tailwindcss@4.0.0)
+        version: 0.3.1(tailwindcss@4.0.1)
       tailwindcss:
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 4.0.1
+        version: 4.0.1
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -1459,9 +1459,6 @@ packages:
     peerDependencies:
       tailwindcss: '*'
 
-  tailwindcss@4.0.0:
-    resolution: {integrity: sha512-ULRPI3A+e39T7pSaf1xoi58AqqJxVCLg8F/uM5A3FadUbnyDTgltVnXJvdkTjwCOGA6NazqHVcwPJC5h2vRYVQ==}
-
   tailwindcss@4.0.1:
     resolution: {integrity: sha512-UK5Biiit/e+r3i0O223bisoS5+y7ZT1PM8Ojn0MxRHzXN1VPZ2KY6Lo6fhu1dOfCfyUAlK7Lt6wSxowRabATBw==}
 
@@ -2855,12 +2852,10 @@ snapshots:
 
   tailwind-merge@2.6.0: {}
 
-  tailwind-variants@0.3.1(tailwindcss@4.0.0):
+  tailwind-variants@0.3.1(tailwindcss@4.0.1):
     dependencies:
       tailwind-merge: 2.5.4
-      tailwindcss: 4.0.0
-
-  tailwindcss@4.0.0: {}
+      tailwindcss: 4.0.1
 
   tailwindcss@4.0.1: {}
 
