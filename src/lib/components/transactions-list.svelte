@@ -19,7 +19,7 @@ const handleDelete = async (_id: string) => {
 
 <ul class="m-1 rounded bg-white p-1 shadow">
 	{#each transactions as transaction (transaction._id.toString())}
-		<li class="border-b p-3 last:border-none hover:font-bold" transition:fade>
+		<li class="border-b p-3 last:border-hidden hover:font-bold" transition:fade>
 			<div class="flex items-center">
 				<button
 					class="mr-1"
