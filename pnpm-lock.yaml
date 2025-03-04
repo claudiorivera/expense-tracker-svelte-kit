@@ -45,8 +45,8 @@ importers:
         specifier: 0.477.0
         version: 0.477.0(svelte@4.2.19)
       mongoose:
-        specifier: 8.11.0
-        version: 8.11.0
+        specifier: 8.12.0
+        version: 8.12.0
       svelte:
         specifier: 4.2.19
         version: 4.2.19
@@ -861,6 +861,10 @@ packages:
     engines: {node: '>=16.20.1'}
     deprecated: a critical bug affecting only useBigInt64=true deserialization usage is fixed in bson@6.10.3
 
+  bson@6.10.3:
+    resolution: {integrity: sha512-MTxGsqgYTwfshYWTRdmZRC+M7FnG1b4y7RO7p2k3X24Wq0yv1m77Wsj0BzlPzd/IowgESfsruQCUToa7vbOpPQ==}
+    engines: {node: '>=16.20.1'}
+
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
@@ -1186,8 +1190,8 @@ packages:
   mongodb-connection-string-url@3.0.2:
     resolution: {integrity: sha512-rMO7CGo/9BFwyZABcKAWL8UJwH/Kc2x0g72uhDWzG48URRax5TCIcJ7Rc3RZqffZzO/Gwff/jyKwCU9TN8gehA==}
 
-  mongodb@6.13.0:
-    resolution: {integrity: sha512-KeESYR5TEaFxOuwRqkOm3XOsMqCSkdeDMjaW5u2nuKfX7rqaofp7JQGoi7sVqQcNJTKuveNbzZtWMstb8ABP6Q==}
+  mongodb@6.14.1:
+    resolution: {integrity: sha512-GnHWIm4GtgREkssWRv9vYKNvqwbLd8WL5hCW3nCqzI2OxEZ6Q5g6vc3J6L1Grz0x1hx1wmYAprLlRr3kzBLcJg==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.188.0
@@ -1213,8 +1217,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.11.0:
-    resolution: {integrity: sha512-xaQSuaLk2JKmXI5zDVVWXVCQTnWhAe8MFOijMnwOuP/wucKVphd3f+ouDKivCDMGjYBDrR7dtoyV0U093xbKqA==}
+  mongoose@8.12.0:
+    resolution: {integrity: sha512-FXZIngJBTt/gvb6uHZHiROy3Mk3EOjNpD0m+GBRfG+twuEntnMjfxwcA94YbYIulf9LkBozt7H8w2OJpqHdUxA==}
     engines: {node: '>=16.20.1'}
 
   mpath@0.9.0:
@@ -2200,6 +2204,8 @@ snapshots:
 
   bson@6.10.1: {}
 
+  bson@6.10.3: {}
+
   buffer-from@1.1.2:
     optional: true
 
@@ -2531,17 +2537,17 @@ snapshots:
       '@types/whatwg-url': 11.0.5
       whatwg-url: 14.1.0
 
-  mongodb@6.13.0:
+  mongodb@6.14.1:
     dependencies:
       '@mongodb-js/saslprep': 1.1.9
-      bson: 6.10.1
+      bson: 6.10.3
       mongodb-connection-string-url: 3.0.2
 
-  mongoose@8.11.0:
+  mongoose@8.12.0:
     dependencies:
       bson: 6.10.1
       kareem: 2.6.3
-      mongodb: 6.13.0
+      mongodb: 6.14.1
       mpath: 0.9.0
       mquery: 5.0.0
       ms: 2.1.3
