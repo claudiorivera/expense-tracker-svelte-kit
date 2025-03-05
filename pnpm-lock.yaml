@@ -45,8 +45,8 @@ importers:
         specifier: 0.477.0
         version: 0.477.0(svelte@4.2.19)
       mongoose:
-        specifier: 8.12.0
-        version: 8.12.0
+        specifier: 8.12.1
+        version: 8.12.1
       svelte:
         specifier: 4.2.19
         version: 4.2.19
@@ -856,11 +856,6 @@ packages:
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
 
-  bson@6.10.1:
-    resolution: {integrity: sha512-P92xmHDQjSKPLHqFxefqMxASNq/aWJMEZugpCjf+AF/pgcUpMMQCg7t7+ewko0/u8AapvF3luf/FoehddEK+sA==}
-    engines: {node: '>=16.20.1'}
-    deprecated: a critical bug affecting only useBigInt64=true deserialization usage is fixed in bson@6.10.3
-
   bson@6.10.3:
     resolution: {integrity: sha512-MTxGsqgYTwfshYWTRdmZRC+M7FnG1b4y7RO7p2k3X24Wq0yv1m77Wsj0BzlPzd/IowgESfsruQCUToa7vbOpPQ==}
     engines: {node: '>=16.20.1'}
@@ -1217,8 +1212,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.12.0:
-    resolution: {integrity: sha512-FXZIngJBTt/gvb6uHZHiROy3Mk3EOjNpD0m+GBRfG+twuEntnMjfxwcA94YbYIulf9LkBozt7H8w2OJpqHdUxA==}
+  mongoose@8.12.1:
+    resolution: {integrity: sha512-UW22y8QFVYmrb36hm8cGncfn4ARc/XsYWQwRTaj0gxtQk1rDuhzDO1eBantS+hTTatfAIS96LlRCJrcNHvW5+Q==}
     engines: {node: '>=16.20.1'}
 
   mpath@0.9.0:
@@ -2202,8 +2197,6 @@ snapshots:
     dependencies:
       balanced-match: 1.0.2
 
-  bson@6.10.1: {}
-
   bson@6.10.3: {}
 
   buffer-from@1.1.2:
@@ -2543,9 +2536,9 @@ snapshots:
       bson: 6.10.3
       mongodb-connection-string-url: 3.0.2
 
-  mongoose@8.12.0:
+  mongoose@8.12.1:
     dependencies:
-      bson: 6.10.1
+      bson: 6.10.3
       kareem: 2.6.3
       mongodb: 6.14.1
       mpath: 0.9.0
