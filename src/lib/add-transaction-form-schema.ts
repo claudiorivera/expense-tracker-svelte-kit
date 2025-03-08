@@ -1,8 +1,8 @@
 import { z } from "zod";
 
 export const TransactionType = {
-	EXPENSE: "EXPENSE",
-	INCOME: "INCOME",
+	Expense: "Expense",
+	Income: "Income",
 } as const;
 
 export type TransactionType = keyof typeof TransactionType;
@@ -12,7 +12,7 @@ export const addTransactionFormSchema = z.object({
 	amount: z.coerce.number().positive("Please enter a positive number"),
 	transactionType: z
 		.nativeEnum(TransactionType)
-		.default(TransactionType.EXPENSE),
+		.default(TransactionType.Expense),
 });
 
 export type AddTransactionFormSchema = typeof addTransactionFormSchema;

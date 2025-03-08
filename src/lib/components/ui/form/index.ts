@@ -14,12 +14,12 @@ export {
 	Field,
 	Control,
 	Label,
+	Button,
 	FieldErrors,
 	Description,
 	Fieldset,
 	Legend,
 	ElementField,
-	Button,
 	//
 	Field as FormField,
 	Control as FormControl,

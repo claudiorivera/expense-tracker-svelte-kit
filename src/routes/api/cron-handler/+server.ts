@@ -18,6 +18,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const isExpense = faker.datatype.boolean();
 
 		return {
+			_id: faker.database.mongodbObjectId().toString(),
 			description: isExpense ? faker.commerce.product() : "Paycheck",
 			amount: Number(
 				faker.finance.amount({
