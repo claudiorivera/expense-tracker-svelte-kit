@@ -18,7 +18,7 @@
 		"@fontsource/lato": "5.2.5",
 		"@sveltejs/adapter-vercel": "5.6.3",
 		"@sveltejs/kit": "2.19.0",
-		"@sveltejs/vite-plugin-svelte": "^3.1.2",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/vite": "4.0.12",
 		"@types/node": "22.13.10",
 		"bits-ui": "0.22.0",
