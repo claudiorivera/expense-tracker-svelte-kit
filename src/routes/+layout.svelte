@@ -2,6 +2,6 @@
 import "../app.css";
 </script>
 
-<main class="cursor-default bg-slate-50 font-thin antialiased">
+<main class="cursor-default antialiased container py-10 mx-auto max-w-lg">
 	<slot />
 </main>

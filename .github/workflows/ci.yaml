@@ -13,22 +13,16 @@ jobs:
         uses: actions/checkout@v4
       - name: 🏗️ Setup Biome
         uses: biomejs/setup-biome@v2
-        with:
-          version: 'latest'
       - name: 🎨 Run Biome
         run: biome ci src
       - name: 🏗️ Setup pnpm
         uses: pnpm/action-setup@v3
-        with:
-          version: 'latest'
       - name: 🏗️ Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
       - name: 📦 Install Dependencies
         run: pnpm install
-      - name: 🔄 SvelteKit Sync
-        run: pnpm sync
-      - name: 🏷️ Check Types
-        run: pnpm check-types
+      - name: ✅ SvelteKit Check
+        run: pnpm check

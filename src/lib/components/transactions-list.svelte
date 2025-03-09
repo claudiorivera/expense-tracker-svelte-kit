@@ -1,38 +1,35 @@
 <script lang="ts">
+import { enhance } from "$app/forms";
+import Button from "$lib/components/ui/button/button.svelte";
 import { formatCurrency } from "$lib/format-currency";
-import type { HydratedDocument } from "mongoose";
+import type { Transaction } from "$lib/types";
+import { Trash2Icon } from "lucide-svelte";
 import { fade } from "svelte/transition";
 
-import type { Transaction } from "$lib/types";
-import DeleteIcon from "./delete-icon.svelte";
-
-export let transactions: HydratedDocument<Transaction>[];
-export let fetchTransactions: () => Promise<void>;
-
-const handleDelete = async (_id: string) => {
-	await fetch(`/api/transactions/${_id}`, {
-		method: "DELETE",
-	});
-	fetchTransactions();
-};
+export let transactions: Array<Transaction>;
 </script>
 
-<ul class="m-1 rounded bg-white p-1 shadow">
-	{#each transactions as transaction (transaction._id.toString())}
-		<li class="border-b p-3 last:border-hidden hover:font-bold" transition:fade>
-			<div class="flex items-center">
-				<button
-					class="mr-1"
-					type="button"
-					on:click={() => {
-						handleDelete(transaction._id.toString());
-					}}
-				>
-					<DeleteIcon />
-				</button>
-				<div class="flex-grow">{transaction.description}</div>
-				<div>{formatCurrency(transaction.amount)}</div>
-			</div>
-		</li>
-	{/each}
+<ul class="m-1 rounded bg-white p-1 shadow-sm">
+  {#each transactions as transaction (transaction._id)}
+  <li class="border-b p-3 last:border-hidden hover:font-normal" transition:fade>
+    <form method="POST" action="?/delete" use:enhance class="inline">
+      <div class="flex items-center gap-2">
+        <Button
+          variant="ghost"
+          size="icon"
+          formaction="?/delete"
+          name="id"
+          value={transaction._id}
+          class="hover:bg-red-100 cursor-pointer"
+          type="submit"
+        >
+          <Trash2Icon class="text-red-500" />
+        </Button>
+        <div class="grow">{transaction.description}</div>
+        <div>{formatCurrency(transaction.amount)}</div>
+      </div>
+    </form>
+  </li>
+  {/each}
 </ul>
+

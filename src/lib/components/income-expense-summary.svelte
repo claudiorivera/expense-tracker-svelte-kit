@@ -17,13 +17,13 @@ $: totalExpenses = transactions
 	}, 0);
 </script>
 
-<div class="m-1 rounded bg-white p-1 shadow">
+<div class="m-1 rounded bg-white p-1 shadow-sm">
 	<div class="flex justify-between">
-		<div class="flex-grow border-r text-center">
+		<div class="grow border-r text-center">
 			<div>INCOME</div>
 			<div class="text-green-500">{formatCurrency(totalIncome)}</div>
 		</div>
-		<div class="flex-grow text-center">
+		<div class="grow text-center">
 			<div>EXPENSES</div>
 			<div class="text-red-500">{formatCurrency(totalExpenses)}</div>
 		</div>

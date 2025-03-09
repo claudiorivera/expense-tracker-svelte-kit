@@ -14,4 +14,5 @@ const TransactionSchema = new Schema<Transaction>({
 });
 
 export const TransactionModel =
-	models.Transaction || model<Transaction>("Transaction", TransactionSchema);
+	(models.Transaction as mongoose.Model<Transaction>) ??
+	model<Transaction>("Transaction", TransactionSchema);
