@@ -54,8 +54,8 @@ importers:
         specifier: 2.24.0
         version: 2.24.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.25.5)(vite@6.2.4(@types/node@22.13.16)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)))(svelte@5.25.5)(vite@6.2.4(@types/node@22.13.16)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)))(@types/json-schema@7.0.15)(svelte@5.25.5)(typescript@5.8.2)
       tailwind-merge:
-        specifier: 3.0.2
-        version: 3.0.2
+        specifier: 3.1.0
+        version: 3.1.0
       tailwind-variants:
         specifier: ^1.0.0
         version: 1.0.0(tailwindcss@4.0.17)
@@ -1403,6 +1403,9 @@ packages:
 
   tailwind-merge@3.0.2:
     resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
+
+  tailwind-merge@3.1.0:
+    resolution: {integrity: sha512-aV27Oj8B7U/tAOMhJsSGdWqelfmudnGMdXIlMnk1JfsjwSjts6o8HyfN7SFH3EztzH4YH8kk6GbLTHzITJO39Q==}
 
   tailwind-variants@1.0.0:
     resolution: {integrity: sha512-2WSbv4ulEEyuBKomOunut65D8UZwxrHoRfYnxGcQNnHqlSCp2+B7Yz2W+yrNDrxRodOXtGD/1oCcKGNBnUqMqA==}
@@ -2769,6 +2772,8 @@ snapshots:
   tabbable@6.2.0: {}
 
   tailwind-merge@3.0.2: {}
+
+  tailwind-merge@3.1.0: {}
 
   tailwind-variants@1.0.0(tailwindcss@4.0.17):
     dependencies:
