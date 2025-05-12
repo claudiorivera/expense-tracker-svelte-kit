@@ -21,7 +21,7 @@
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
 		"@tailwindcss/postcss": "4.1.6",
 		"@types/node": "22.15.17",
-		"bits-ui": "1.4.7",
+		"bits-ui": "1.4.8",
 		"clsx": "2.1.1",
 		"formsnap": "2.0.1",
 		"lucide-svelte": "0.509.0",

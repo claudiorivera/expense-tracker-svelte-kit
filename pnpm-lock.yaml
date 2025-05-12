@@ -30,8 +30,8 @@ importers:
         specifier: 22.15.17
         version: 22.15.17
       bits-ui:
-        specifier: 1.4.7
-        version: 1.4.7(svelte@5.28.2)
+        specifier: 1.4.8
+        version: 1.4.8(svelte@5.28.2)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -870,8 +870,8 @@ packages:
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
-  bits-ui@1.4.7:
-    resolution: {integrity: sha512-oqfSbgB/2Nc3qwOvohkRzw0nQcUKsNPwthD4uzy9E21wSbhc00RDcZqCJmFrrcW336J+aStM1sITsVGQFjT+iw==}
+  bits-ui@1.4.8:
+    resolution: {integrity: sha512-j34GsdSsJ+ZBl9h/70VkufvrlEgTKQSZvm80eM5VvuhLJWvpfEpn9+k0FVmtDQl9NSPgEVtI9imYhm8nW9Nj/w==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.11.0
@@ -2220,7 +2220,7 @@ snapshots:
     dependencies:
       file-uri-to-path: 1.0.0
 
-  bits-ui@1.4.7(svelte@5.28.2):
+  bits-ui@1.4.8(svelte@5.28.2):
     dependencies:
       '@floating-ui/core': 1.7.0
       '@floating-ui/dom': 1.7.0
