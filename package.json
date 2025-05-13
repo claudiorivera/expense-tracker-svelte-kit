@@ -24,7 +24,7 @@
 		"bits-ui": "1.4.8",
 		"clsx": "2.1.1",
 		"formsnap": "2.0.1",
-		"lucide-svelte": "0.509.0",
+		"lucide-svelte": "0.510.0",
 		"mongoose": "8.14.2",
 		"svelte": "5.28.6",
 		"svelte-check": "4.1.7",
