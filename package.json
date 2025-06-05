@@ -28,7 +28,7 @@
 		"mongoose": "8.15.1",
 		"svelte": "5.33.14",
 		"svelte-check": "4.2.1",
-		"sveltekit-superforms": "2.25.0",
+		"sveltekit-superforms": "2.26.0",
 		"tailwind-merge": "3.3.0",
 		"tailwind-variants": "^1.0.0",
 		"tailwindcss": "4.1.8",
