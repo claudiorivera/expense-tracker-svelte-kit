@@ -17,7 +17,7 @@
 		"@biomejs/biome": "1.9.4",
 		"@faker-js/faker": "9.9.0",
 		"@sveltejs/adapter-vercel": "5.8.0",
-		"@sveltejs/kit": "2.25.0",
+		"@sveltejs/kit": "2.25.1",
 		"@sveltejs/vite-plugin-svelte": "5.1.1",
 		"@tailwindcss/postcss": "4.1.11",
 		"@types/node": "22.15.21",
