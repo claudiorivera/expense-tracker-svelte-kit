@@ -33,7 +33,7 @@
 		"tailwind-variants": "^1.0.0",
 		"tailwindcss": "4.1.11",
 		"tailwindcss-animate": "1.0.7",
-		"typescript": "5.8.3",
+		"typescript": "5.9.2",
 		"vite": "6.3.5",
 		"zod": "3.25.76"
 	},
