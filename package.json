@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@faker-js/faker": "9.9.0",
+		"@faker-js/faker": "10.0.0",
 		"@sveltejs/adapter-vercel": "5.10.2",
 		"@sveltejs/kit": "2.36.2",
 		"@sveltejs/vite-plugin-svelte": "5.1.1",
