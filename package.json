@@ -34,7 +34,7 @@
 		"tailwindcss": "4.1.12",
 		"tailwindcss-animate": "1.0.7",
 		"typescript": "5.9.2",
-		"vite": "6.3.5",
+		"vite": "7.1.5",
 		"zod": "3.25.76"
 	},
 	"pnpm": {
