@@ -1,5 +1,6 @@
-import { MONGODB_URI } from "$env/static/private";
 import mongoose from "mongoose";
+import { env } from "$env/dynamic/private";
+
 /* 
   0 - disconnected
   1 - connected
@@ -24,7 +25,7 @@ export async function dbConnect() {
 
 		await mongoose.disconnect();
 	}
-	await mongoose.connect(MONGODB_URI ?? "");
+	await mongoose.connect(env.MONGODB_URI);
 	mongoConnection.isConnected = 1;
 }
 

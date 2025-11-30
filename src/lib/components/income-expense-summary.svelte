@@ -2,7 +2,7 @@
 import { formatCurrency } from "$lib/format-currency";
 import type { Transaction } from "$lib/types";
 
-export let transactions: Transaction[];
+export let transactions: Array<Transaction>;
 
 $: totalIncome = transactions
 	.filter((transaction) => transaction.amount > 0)

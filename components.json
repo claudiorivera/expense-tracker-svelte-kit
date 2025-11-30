@@ -1,17 +1,22 @@
 {
-	"$schema": "https://next.shadcn-svelte.com/schema.json",
-	"style": "default",
+	"$schema": "https://ui.shadcn.com/schema.json",
+	"style": "new-york",
+	"rsc": false,
+	"tsx": true,
 	"tailwind": {
 		"config": "tailwind.config.ts",
 		"css": "src/app.css",
-		"baseColor": "slate"
+		"baseColor": "neutral",
+		"cssVariables": true,
+		"prefix": ""
 	},
+	"iconLibrary": "lucide",
 	"aliases": {
 		"components": "$lib/components",
-		"utils": "$lib/utils",
+		"utils": "$lib/lib/utils",
 		"ui": "$lib/components/ui",
+		"lib": "$lib/lib",
 		"hooks": "$lib/hooks"
 	},
-	"typescript": true,
-	"registry": "https://next.shadcn-svelte.com/registry"
+	"registries": {}
 }

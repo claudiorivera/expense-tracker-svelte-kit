@@ -1,15 +1,15 @@
+import { type Actions, fail } from "@sveltejs/kit";
+import { superValidate } from "sveltekit-superforms";
+import { zod4 } from "sveltekit-superforms/adapters";
 import {
-	TransactionType,
 	addTransactionFormSchema,
+	TransactionType,
 } from "$lib/add-transaction-form-schema";
 import { TransactionModel } from "$lib/models/transaction";
 import { dbConnect } from "$lib/mongoose-connect";
-import { type Actions, fail } from "@sveltejs/kit";
-import { superValidate } from "sveltekit-superforms";
-import { zod } from "sveltekit-superforms/adapters";
 import type { PageServerLoad } from "./$types";
 
-const form = await superValidate(zod(addTransactionFormSchema));
+const form = await superValidate(zod4(addTransactionFormSchema));
 export type AddTransactionForm = typeof form;
 
 export const load: PageServerLoad = async () => {
@@ -30,7 +30,7 @@ export const load: PageServerLoad = async () => {
 
 export const actions: Actions = {
 	create: async (event) => {
-		const form = await superValidate(event, zod(addTransactionFormSchema));
+		const form = await superValidate(event, zod4(addTransactionFormSchema));
 
 		if (!form.valid) {
 			return fail(400, {

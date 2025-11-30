@@ -1,23 +1,23 @@
 <script lang="ts">
 import {
-	type AddTransactionFormSchema,
-	TransactionType,
-	addTransactionFormSchema,
-} from "$lib/add-transaction-form-schema";
-import * as Form from "$lib/components/ui/form";
-import { Input } from "$lib/components/ui/input";
-import * as Select from "$lib/components/ui/select";
-import {
 	type Infer,
 	type SuperValidated,
 	superForm,
 } from "sveltekit-superforms";
-import { zodClient } from "sveltekit-superforms/adapters";
+import { zod4 } from "sveltekit-superforms/adapters";
+import {
+	type AddTransactionFormSchema,
+	addTransactionFormSchema,
+	TransactionType,
+} from "$lib/add-transaction-form-schema";
+import * as Form from "$lib/components/ui/form";
+import { Input } from "$lib/components/ui/input";
+import * as Select from "$lib/components/ui/select";
 
 export let form: SuperValidated<Infer<AddTransactionFormSchema>>;
 
 const _form = superForm(form, {
-	validators: zodClient(addTransactionFormSchema),
+	validators: zod4(addTransactionFormSchema),
 	autoFocusOnError: true,
 });
 

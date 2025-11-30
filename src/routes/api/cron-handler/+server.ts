@@ -1,8 +1,5 @@
-import { TransactionModel } from "$lib/models/transaction";
-import { dbConnect, dbDisconnect } from "$lib/mongoose-connect";
-import type { Transaction } from "$lib/types";
-import { faker } from "@faker-js/faker";
 import { json } from "@sveltejs/kit";
+import { seed } from "$lib/seed";
 import type { RequestHandler } from "./$types";
 
 export const POST: RequestHandler = async ({ request }) => {
@@ -12,31 +9,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		return json({ message: "Unauthorized" }, { status: 401 });
 	}
 
-	await dbConnect();
-
-	const transactions: Transaction[] = Array.from({ length: 10 }, () => {
-		const isExpense = faker.datatype.boolean();
-
-		return {
-			_id: faker.database.mongodbObjectId().toString(),
-			description: isExpense ? faker.commerce.product() : "Paycheck",
-			amount: Number(
-				faker.finance.amount({
-					min: isExpense ? -500 : 500,
-					max: isExpense ? -1 : 500,
-				}),
-			),
-		};
-	});
-
-	await TransactionModel.deleteMany();
-
-	for (const transaction of transactions) {
-		const newTransaction = new TransactionModel(transaction);
-		await newTransaction.save();
-	}
-
-	await dbDisconnect();
+	await seed();
 
 	return json({
 		status: 204,

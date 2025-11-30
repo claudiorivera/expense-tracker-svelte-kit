@@ -1,10 +1,10 @@
 <script lang="ts">
-import { cn } from "$lib/utils.js";
 import {
 	Select as SelectPrimitive,
 	type WithoutChildrenOrChild,
 } from "bits-ui";
 import ChevronUp from "lucide-svelte/icons/chevron-up";
+import { cn } from "$lib/utils";
 
 let {
 	ref = $bindable(null),

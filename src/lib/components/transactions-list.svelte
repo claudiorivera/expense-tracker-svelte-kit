@@ -1,10 +1,10 @@
 <script lang="ts">
+import { Trash2Icon } from "lucide-svelte";
+import { fade } from "svelte/transition";
 import { enhance } from "$app/forms";
 import Button from "$lib/components/ui/button/button.svelte";
 import { formatCurrency } from "$lib/format-currency";
 import type { Transaction } from "$lib/types";
-import { Trash2Icon } from "lucide-svelte";
-import { fade } from "svelte/transition";
 
 export let transactions: Array<Transaction>;
 </script>

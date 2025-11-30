@@ -13,5 +13,6 @@
 		}
 	],
 	"schedule": ["after 9pm and before 9am every weekday", "every weekend"],
-	"commitMessagePrefix": "🤖"
+	"commitMessagePrefix": "🤖",
+	"prConcurrentLimit": 3
 }

@@ -1,10 +1,10 @@
 <script lang="ts">
-import { cn } from "$lib/utils.js";
 import {
 	RadioGroup as RadioGroupPrimitive,
 	type WithoutChildrenOrChild,
 } from "bits-ui";
 import Circle from "lucide-svelte/icons/circle";
+import { cn } from "$lib/utils";
 
 let {
 	ref = $bindable(null),

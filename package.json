@@ -2,7 +2,7 @@
 	"name": "expense-tracker-svelte-kit",
 	"version": "0.0.1",
 	"private": true,
-	"packageManager": "pnpm@10.11.1",
+	"packageManager": "pnpm@10.22.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -11,36 +11,40 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"check:fix": "biome check --write src"
+		"check:fix": "biome check --write",
+		"clean": "rm -rf node_modules .svelte-kit .turbo .vercel",
+		"db:seed": "pnpm with-env tsx src/lib/run-seed.ts",
+		"with-env": "dotenvx run --"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@faker-js/faker": "9.9.0",
-		"@sveltejs/adapter-vercel": "5.10.2",
-		"@sveltejs/kit": "2.39.1",
-		"@sveltejs/vite-plugin-svelte": "5.1.1",
-		"@tailwindcss/postcss": "4.1.13",
-		"@types/node": "22.15.21",
-		"bits-ui": "1.8.0",
+		"@biomejs/biome": "2.3.8",
+		"@dotenvx/dotenvx": "1.51.1",
+		"@faker-js/faker": "10.1.0",
+		"@sveltejs/adapter-vercel": "6.2.0",
+		"@sveltejs/kit": "2.49.0",
+		"@sveltejs/vite-plugin-svelte": "6.2.1",
+		"@tailwindcss/vite": "4.1.17",
+		"@types/node": "24.10.1",
+		"bits-ui": "2.14.4",
 		"clsx": "2.1.1",
 		"formsnap": "2.0.1",
-		"lucide-svelte": "0.541.0",
-		"mongoose": "8.18.1",
-		"svelte": "5.38.10",
-		"svelte-check": "4.3.1",
-		"sveltekit-superforms": "2.27.1",
-		"tailwind-merge": "3.3.1",
-		"tailwind-variants": "^1.0.0",
-		"tailwindcss": "4.1.13",
+		"lucide-svelte": "0.555.0",
+		"mongoose": "9.0.0",
+		"svelte": "5.45.2",
+		"svelte-check": "4.3.4",
+		"sveltekit-superforms": "2.28.1",
+		"tailwind-merge": "3.4.0",
+		"tailwind-variants": "3.2.2",
+		"tailwindcss": "4.1.17",
 		"tailwindcss-animate": "1.0.7",
-		"typescript": "5.9.2",
-		"vite": "6.3.6",
-		"zod": "3.25.76"
+		"tsx": "4.21.0",
+		"typescript": "5.9.3",
+		"vite": "7.2.4",
+		"vite-tsconfig-paths": "5.1.4",
+		"zod": "4.1.13"
 	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"@biomejs/biome",
-			"esbuild"
-		]
+	"dependencies": {
+		"class-variance-authority": "0.7.1",
+		"lucide-react": "0.555.0"
 	}
 }
