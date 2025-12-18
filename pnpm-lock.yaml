@@ -12,8 +12,8 @@ importers:
         specifier: 0.7.1
         version: 0.7.1
       lucide-react:
-        specifier: 0.556.0
-        version: 0.556.0(react@19.2.0)
+        specifier: 0.562.0
+        version: 0.562.0(react@19.2.0)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.8
@@ -49,8 +49,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(svelte@5.45.8)(sveltekit-superforms@2.28.1(@sveltejs/kit@2.49.2(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.45.8)(vite@7.2.7(@types/node@24.10.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.21.0)(yaml@2.7.0)))(svelte@5.45.8)(vite@7.2.7(@types/node@24.10.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.21.0)(yaml@2.7.0)))(@types/json-schema@7.0.15)(esbuild@0.27.0)(svelte@5.45.8)(typescript@5.9.3))
       lucide-svelte:
-        specifier: 0.556.0
-        version: 0.556.0(svelte@5.45.8)
+        specifier: 0.562.0
+        version: 0.562.0(svelte@5.45.8)
       mongoose:
         specifier: 9.0.1
         version: 9.0.1
@@ -1220,13 +1220,13 @@ packages:
     resolution: {integrity: sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==}
     engines: {node: 20 || >=22}
 
-  lucide-react@0.556.0:
-    resolution: {integrity: sha512-iOb8dRk7kLaYBZhR2VlV1CeJGxChBgUthpSP8wom9jfj79qovgG6qcSdiy6vkoREKPnbUYzJsCn4o4PtG3Iy+A==}
+  lucide-react@0.562.0:
+    resolution: {integrity: sha512-82hOAu7y0dbVuFfmO4bYF1XEwYk/mEbM5E+b1jgci/udUBEE/R7LF5Ip0CCEmXe8AybRM8L+04eP+LGZeDvkiw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  lucide-svelte@0.556.0:
-    resolution: {integrity: sha512-OUj2xk403WslZAIGnEF5wvw/A7QAUXebDWNFajU/INY9XPWRZZZdcr+h6zB6XAzd84F7lPZqiEi42JVjXtcBYw==}
+  lucide-svelte@0.562.0:
+    resolution: {integrity: sha512-kSJDH/55lf0mun/o4nqWBXOcq0fWYzPeIjbTD97ywoeumAB9kWxtM06gC7oynqjtK3XhAljWSz5RafIzPEYIQA==}
     peerDependencies:
       svelte: ^3 || ^4 || ^5.0.0-next.42
 
@@ -2664,11 +2664,11 @@ snapshots:
 
   lru-cache@11.2.4: {}
 
-  lucide-react@0.556.0(react@19.2.0):
+  lucide-react@0.562.0(react@19.2.0):
     dependencies:
       react: 19.2.0
 
-  lucide-svelte@0.556.0(svelte@5.45.8):
+  lucide-svelte@0.562.0(svelte@5.45.8):
     dependencies:
       svelte: 5.45.8
 
