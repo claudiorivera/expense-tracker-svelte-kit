@@ -52,8 +52,8 @@ importers:
         specifier: 0.562.0
         version: 0.562.0(svelte@5.47.1)
       mongoose:
-        specifier: 9.1.4
-        version: 9.1.4
+        specifier: 9.1.5
+        version: 9.1.5
       svelte:
         specifier: 5.47.1
         version: 5.47.1
@@ -1282,8 +1282,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@9.1.4:
-    resolution: {integrity: sha512-V8JIyoWKWW+R2COlOsh6gaYw9TvczSiP/cN3Yuk1pv7ws5VNFAy5GPrK8jfz9tVYovmqdWOJRurMjL4ilYn9wA==}
+  mongoose@9.1.5:
+    resolution: {integrity: sha512-N6gypEO+wLmZp8kCYNQmrEWxVMT0KhyHvVttBZoKA/1ngY7aUsBjqHzCPtDgz+i8JAnqMOiEKmuJIDEQu1b9Dw==}
     engines: {node: '>=20.19.0'}
 
   mpath@0.9.0:
@@ -2668,7 +2668,7 @@ snapshots:
       bson: 7.0.0
       mongodb-connection-string-url: 7.0.0
 
-  mongoose@9.1.4:
+  mongoose@9.1.5:
     dependencies:
       kareem: 3.0.0
       mongodb: 7.0.0
