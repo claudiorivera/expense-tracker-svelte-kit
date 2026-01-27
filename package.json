@@ -28,7 +28,7 @@
 		"bits-ui": "2.15.4",
 		"clsx": "2.1.1",
 		"formsnap": "2.0.1",
-		"lucide-svelte": "0.562.0",
+		"lucide-svelte": "0.563.0",
 		"mongoose": "9.1.5",
 		"svelte": "5.48.2",
 		"svelte-check": "4.3.5",
@@ -45,6 +45,6 @@
 	},
 	"dependencies": {
 		"class-variance-authority": "0.7.1",
-		"lucide-react": "0.562.0"
+		"lucide-react": "0.563.0"
 	}
 }
