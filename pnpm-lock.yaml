@@ -19,8 +19,8 @@ importers:
         specifier: 2.4.7
         version: 2.4.7
       '@dotenvx/dotenvx':
-        specifier: 1.54.1
-        version: 1.54.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@faker-js/faker':
         specifier: 10.3.0
         version: 10.3.0
@@ -160,8 +160,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@dotenvx/dotenvx@1.54.1':
-    resolution: {integrity: sha512-41gU3q7v05GM92QPuPUf4CmUw+mmF8p4wLUh6MCRlxpCkJ9ByLcY9jUf6MwrMNmiKyG/rIckNxj9SCfmNCmCqw==}
+  '@dotenvx/dotenvx@1.55.1':
+    resolution: {integrity: sha512-WEuKyoe9CA7dfcFBnNbL0ndbCNcptaEYBygfFo9X1qEG+HD7xku4CYIplw6sbAHJavesZWbVBHeRSpvri0eKqw==}
     hasBin: true
 
   '@ecies/ciphers@0.2.5':
@@ -1785,7 +1785,7 @@ snapshots:
   '@biomejs/cli-win32-x64@2.4.7':
     optional: true
 
-  '@dotenvx/dotenvx@1.54.1':
+  '@dotenvx/dotenvx@1.55.1':
     dependencies:
       commander: 11.1.0
       dotenv: 17.2.3
