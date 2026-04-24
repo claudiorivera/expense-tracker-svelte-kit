@@ -21,7 +21,7 @@
 		"@dotenvx/dotenvx": "1.62.0",
 		"@faker-js/faker": "10.4.0",
 		"@sveltejs/adapter-vercel": "6.3.3",
-		"@sveltejs/kit": "2.57.1",
+		"@sveltejs/kit": "2.58.0",
 		"@sveltejs/vite-plugin-svelte": "7.0.0",
 		"@tailwindcss/vite": "4.2.4",
 		"@types/node": "25.6.0",
