@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.13",
-		"@dotenvx/dotenvx": "1.61.5",
+		"@dotenvx/dotenvx": "1.62.0",
 		"@faker-js/faker": "10.4.0",
 		"@sveltejs/adapter-vercel": "6.3.3",
 		"@sveltejs/kit": "2.57.1",
