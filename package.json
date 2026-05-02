@@ -17,7 +17,7 @@
 		"with-env": "dotenvx run --"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.13",
+		"@biomejs/biome": "2.4.14",
 		"@dotenvx/dotenvx": "1.64.0",
 		"@faker-js/faker": "10.4.0",
 		"@sveltejs/adapter-vercel": "6.3.3",
