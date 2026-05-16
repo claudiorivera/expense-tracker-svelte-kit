@@ -58,14 +58,16 @@ export const actions: Actions = {
 		const data = await request.formData();
 		const id = data.get("id");
 
-		await dbConnect();
+		if (id) {
+			await dbConnect();
 
-		await TransactionModel.findOneAndDelete({
-			_id: id,
-		});
+			await TransactionModel.findOneAndDelete({
+				_id: id.toString(),
+			});
 
-		return {
-			success: true,
-		};
+			return {
+				success: true,
+			};
+		}
 	},
 };
