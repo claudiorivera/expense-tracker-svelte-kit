@@ -19,10 +19,4 @@ type TextareaEvents = {
 	input: FormTextareaEvent<InputEvent>;
 };
 
-export {
-	Root,
-	//
-	Root as Textarea,
-	type TextareaEvents,
-	type FormTextareaEvent,
-};
+export { type FormTextareaEvent, Root, Root as Textarea, type TextareaEvents };
