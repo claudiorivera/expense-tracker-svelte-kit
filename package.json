@@ -30,7 +30,7 @@
 		"formsnap": "2.0.1",
 		"lucide-svelte": "1.0.1",
 		"mongoose": "9.6.3",
-		"svelte": "5.56.1",
+		"svelte": "5.56.2",
 		"svelte-check": "4.5.0",
 		"sveltekit-superforms": "2.30.1",
 		"tailwind-merge": "3.6.0",
