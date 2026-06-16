@@ -2,3 +2,5 @@ engineStrict: true
 saveExact: true
 allowBuilds:
   esbuild: true
+overrides:
+  "@sveltejs/adapter-vercel>esbuild": "0.28.1"
