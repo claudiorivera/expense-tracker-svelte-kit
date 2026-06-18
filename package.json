@@ -44,6 +44,6 @@
 	},
 	"dependencies": {
 		"class-variance-authority": "0.7.1",
-		"lucide-react": "1.16.0"
+		"lucide-react": "1.21.0"
 	}
 }
