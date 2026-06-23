@@ -2,7 +2,7 @@
 	"name": "expense-tracker-svelte-kit",
 	"version": "0.0.1",
 	"private": true,
-	"packageManager": "pnpm@11.1.2",
+	"packageManager": "pnpm@11.9.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
