@@ -3,4 +3,4 @@ saveExact: true
 allowBuilds:
   esbuild: true
 overrides:
-  "@sveltejs/adapter-vercel>esbuild": "0.28.1"
+  "@sveltejs/adapter-vercel>esbuild": "0.28.2"
