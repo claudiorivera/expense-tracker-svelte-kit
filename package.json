@@ -37,7 +37,7 @@
 		"tailwind-variants": "3.3.1",
 		"tailwindcss": "4.3.3",
 		"tailwindcss-animate": "1.0.7",
-		"tsx": "4.22.4",
+		"tsx": "4.23.13",
 		"typescript": "6.0.3",
 		"vite": "8.0.16",
 		"zod": "4.4.3"
