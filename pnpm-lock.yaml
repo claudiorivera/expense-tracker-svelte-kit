@@ -15,8 +15,8 @@ importers:
         specifier: 0.7.1
         version: 0.7.1
       lucide-react:
-        specifier: 1.38.0
-        version: 1.38.0(react@19.2.0)
+        specifier: 1.41.0
+        version: 1.41.0(react@19.2.0)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.5.11
@@ -1179,8 +1179,8 @@ packages:
     resolution: {integrity: sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==}
     engines: {node: 20 || >=22}
 
-  lucide-react@1.38.0:
-    resolution: {integrity: sha512-xZCyBd/wiVUDactoCc+42TjL0aB7EBOXsuX+tjz+W/sGzw2KhHpL1NOH3FIaVUcpimvUBpIYfz34Ofj9S5JEzQ==}
+  lucide-react@1.41.0:
+    resolution: {integrity: sha512-6lksP35l6KszDKUeRTi4LV7i6DEe0Yzl2ALJm9j4c5xEYN91GdW1xGsawGMOg2mgjF5GHBVX8pKX9kP+cWsP3Q==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -2598,7 +2598,7 @@ snapshots:
 
   lru-cache@11.2.4: {}
 
-  lucide-react@1.38.0(react@19.2.0):
+  lucide-react@1.41.0(react@19.2.0):
     dependencies:
       react: 19.2.0
 
