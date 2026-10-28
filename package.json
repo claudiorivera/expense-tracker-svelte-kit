@@ -27,7 +27,7 @@
 		"@types/node": "25.9.9",
 		"bits-ui": "2.20.2",
 		"clsx": "2.1.1",
-		"formsnap": "2.0.1",
+		"formsnap": "2.1.0",
 		"lucide-svelte": "1.0.1",
 		"mongoose": "9.9.5",
 		"svelte": "5.57.3",
