@@ -29,7 +29,7 @@
 		"clsx": "2.1.1",
 		"formsnap": "2.1.0",
 		"lucide-svelte": "1.0.1",
-		"mongoose": "9.9.5",
+		"mongoose": "9.11.4",
 		"svelte": "5.57.3",
 		"svelte-check": "4.7.7",
 		"sveltekit-superforms": "2.30.2",
